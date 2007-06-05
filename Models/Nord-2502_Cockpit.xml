@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin -France
+    Copyright License:  GPL
+-->
+<!--                    Auteur :      Gerard ROBIN                       COPYRIGHT-->
+<PropertyList>
+
+    <path>nord-2502-cockpit.ac</path>
+    <texture-path>Textures/texture-2502</texture-path>
+
+    <!--<animation include="../Instruments/Instrument-Light5.xml">
+            <object-name>Couronne-Elec</object-name>
+    </animation>
+
+    <animation include="../Instruments/Instrument-Light5.xml">
+            <object-name>Couronne-Train</object-name>
+    </animation>
+
+    <animation include="../Instruments/Instrument-Light2.xml">
+            <object-name>Corps-Elec</object-name>
+    </animation>
+
+    <animation include="../Instruments/Instrument-Light2.xml">
+            <object-name>Corps-Train</object-name>
+    </animation>-->
+
+    <!--**************************************************-->
+
+    <!--<animation>
+    <type>select</type>
+    <object-name>GManche</object-name>
+    <condition>
+        <not>
+        <equals>
+            <property>sim/current-view/view-number</property>
+            <value>0</value>
+        </equals>
+        </not>
+    </condition>
+    </animation>-->
+
+
+    <!--<panel>
+            <name>Cmd-Canopy</name>
+            <path>Aircraft/F4U7/Panels/canopy-hotspots.xml</path>
+            <bottom-left>
+                    <x-m>1.36</x-m>
+                    <y-m>-0.42</y-m>
+                    <z-m>0.394418</z-m>
+            </bottom-left>
+            <bottom-right>
+                    <x-m>1.36</x-m>
+                    <y-m>-0.34</y-m>
+                    <z-m>0.394418</z-m>
+            </bottom-right>
+            <top-left>
+                    <x-m>1.28</x-m>
+                    <y-m>-0.39</y-m>
+                    <z-m>0.394418</z-m>
+            </top-left>
+    </panel>-->
+
+    <model>
+        <name>PanelV</name>
+        <path>Aircraft/Noratlas//Panels/Nord-2502_FPanel.xml</path>
+        <offsets>
+                <x-m>-6.72895</x-m>
+                <y-m>0</y-m>
+                <z-m>0.391854</z-m>
+                <pitch-deg>0</pitch-deg>
+        </offsets>
+    </model>
+    <model>
+            <name>Mag-Compass</name>
+            <path>Aircraft/Noratlas/Instruments/mag-compass.xml</path>
+            <offsets>
+                    <x-m>-6.50437</x-m>
+                    <y-m>-0.310364</y-m>
+                    <z-m>1.02751</z-m>
+                    <pitch-deg>15</pitch-deg>
+                    <heading-deg>-20</heading-deg>
+            </offsets>
+    </model>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>GThrottle</object-name>
+            <property>controls/engines/engine/throttle/</property>
+            <interpolation>
+                    <entry>
+                    <ind>0</ind>
+                    <dep>40</dep>
+                    </entry>
+                    <entry>
+                    <ind>1</ind>
+                    <dep>0</dep>
+                    </entry>
+            </interpolation>
+            <center>
+                    <x-m>-6.33722</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-0.0297421</z-m>
+            </center>
+            <axis>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+            </axis>
+    </animation>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>GThrottle</object-name>
+            <property>controls/engines/engine[2]/throttle/</property>
+            <interpolation>
+                    <entry>
+                    <ind>0</ind>
+                    <dep>0</dep>
+                    </entry>
+                    <entry>
+                    <ind>1</ind>
+                    <dep>-10</dep>
+                    </entry>
+            </interpolation>
+            <center>
+                    <x-m>-6.33722</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-0.0297421</z-m>
+            </center>
+            <axis>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+            </axis>
+    </animation>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>DThrottle</object-name>
+            <property>controls/engines/engine[1]/throttle/</property>
+            <interpolation>
+                    <entry>
+                    <ind>0</ind>
+                    <dep>40</dep>
+                    </entry>
+                    <entry>
+                    <ind>1</ind>
+                    <dep>0</dep>
+                    </entry>
+            </interpolation>
+            <center>
+                    <x-m>-6.33722</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-0.0297421</z-m>
+            </center>
+            <axis>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+            </axis>
+    </animation>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>DThrottle</object-name>
+            <property>controls/engines/engine[3]/throttle/</property>
+            <interpolation>
+                    <entry>
+                    <ind>0</ind>
+                    <dep>0</dep>
+                    </entry>
+                    <entry>
+                    <ind>1</ind>
+                    <dep>-10</dep>
+                    </entry>
+            </interpolation>
+            <center>
+                    <x-m>-6.33722</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-0.0297421</z-m>
+            </center>
+            <axis>
+                    <x>0</x>
+                    <y>1</y>
+                    <z>0</z>
+            </axis>
+    </animation>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>GManche</object-name>
+            <property>controls/flight/elevator</property>
+            <factor>-10</factor>
+            <center>
+                    <x-m>-6.49127</x-m>
+                    <y-m>-0.0</y-m>
+                    <z-m>-0.0736617</z-m>
+            </center>
+            <axis>
+                    <x>0.0</x>
+                    <y>1.0</y>
+                    <z>0.0</z>
+            </axis>
+    </animation>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>GVolant</object-name>
+            <property>controls/flight/aileron</property>
+            <factor>-10</factor>
+            <center>
+                    <x-m>0</x-m>
+                    <y-m>-0.483972</y-m>
+                    <z-m>0.425431</z-m>
+            </center>
+            <axis>
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+            </axis>
+    </animation>
+
+    <animation>
+            <type>rotate</type>
+            <object-name>Volant-Flaps</object-name>
+            <property>surface-positions/flap-pos-norm</property>
+            <factor>360</factor>
+            <center>
+                    <x-m>-6.49097</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-0.0127427</z-m>
+            </center>
+            <axis>
+                    <x>0.0</x>
+                    <y>1.0</y>
+                    <z>0.0</z>
+            </axis>
+    </animation>
+
+
+
+
+
+
+
+</PropertyList>

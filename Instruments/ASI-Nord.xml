@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+
+<PropertyList>
+
+ <path>Models/asi2-nord.ac</path>
+ <texture-path>Models/Textures</texture-path>
+
+ 	<animation>
+		<type>noshadow</type>
+		<object-name>ASI</object-name>
+	</animation>
+
+
+	<animation include="Instrument-Light4.xml">
+		<object-name>Aiguille</object-name>
+	</animation>
+
+	<animation include="Instrument-Light3.xml">
+		<object-name>Cadran</object-name>
+	</animation>
+
+
+	<animation>
+		<type>rotate</type>
+		<object-name>Aiguille</object-name>
+		<property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>0</dep>
+			</entry>
+			<entry>
+				<ind>3</ind>
+				<dep>15</dep>
+			</entry>
+			<entry>
+				<ind>20</ind>    <!--7x4=28deg-->
+				<dep>43</dep>
+			</entry>
+			<entry>
+				<ind>50</ind>       <!--9x6=54deg-->
+				<dep>97</dep>
+			</entry>
+			<entry>
+				<ind>100</ind>
+				<dep>190</dep>
+			</entry>
+                        <entry>
+				<ind>150</ind>
+				<dep>240</dep>
+			</entry>
+                        <entry>
+				<ind>200</ind>
+				<dep>270</dep>
+			</entry>
+			<entry>
+				<ind>350</ind>    <!--5X45=225deg-->
+				<dep>347</dep>
+			</entry>
+		</interpolation>
+		<center>
+			<x-m>0.00</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+			</axis>
+	</animation>
+
+</PropertyList>

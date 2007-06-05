@@ -1,0 +1,32 @@
+Thanks for using that Aircraft.
+
+Could you notice, that Nord 2502 model is under construction, the Panel and the FDM are wrong.
+
+
+in order to give quickly a model flyable with FlightGear:
+
+1/ I am working on the 3D panel, my goal is to offer the right instruments at the right place, now we have only some instruments, which may help to fly that aircraft.
+
+2/ 	I have  built an FDM from Aeromatic, even if the parameters which are given by Aeromatic are reprensentative, that FDM must be tuned according to the real aircraft specifications 
+
+
+Regards 
+
+Gérard Robin.
+
+
+
+TODO
+
+It is a very long list, so i am too lazy to write it.
+That model is only 20%  done.
+
+
+
+
+HOW TO START THE AIRCRAFT
+
+
+The model start with the engines stopped.
+
+ the how to start is explained  on the GUI "Menu/Help/Aircraft Help"

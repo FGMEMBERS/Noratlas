@@ -1,0 +1,37 @@
+<PropertyList>
+
+
+
+
+
+<path>Instruments-3d.ac</path>
+
+
+
+
+
+<!-- Front panel -->
+
+  
+  
+  
+  
+ 
+ 
+ 
+
+ 
+ <animation>
+    <type>select</type>
+    <object-name>Flot-Lamp</object-name>
+    <condition>
+      <equals>
+        <property>/surface-positions/speedbrake-pos-norm</property>
+        <value type="double">1.0</value>       
+      </equals>    
+     </condition>  
+  </animation>
+  
+ 
+ 
+ </PropertyList>

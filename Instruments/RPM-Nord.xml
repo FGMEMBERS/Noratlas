@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+
+<PropertyList>
+
+ <path>Models/rpm-nord.ac</path>
+ <texture-path>Models/Textures</texture-path>
+
+        <animation>
+                <type>noshadow</type>
+                <object-name>RPM</object-name>
+        </animation>
+
+        <animation include="Instrument-Light4.xml">
+                <object-name>Aiguille0</object-name>
+        </animation>
+
+        <animation include="Instrument-Light4.xml">
+                <object-name>Aiguille1</object-name>
+        </animation>
+
+        <animation include="Instrument-Light3.xml">
+                <object-name>Cadran</object-name>
+        </animation>
+
+        <animation>
+                <type>rotate</type>
+                <object-name>Aiguille0</object-name>
+                <property>/engines/engine[0]/rpm</property>
+                <min>0</min>
+                <max>4500</max>
+                <interpolation>
+                        <entry>
+                        <ind>0</ind>
+                        <dep>0</dep>
+                        </entry>
+                        <entry>
+                        <ind>4500</ind>
+                        <dep>330</dep>
+                        </entry>
+                </interpolation>
+                <center>
+                        <x-m>0</x-m>
+                        <y-m>0</y-m>
+                        <z-m>0</z-m>
+                </center>
+                <axis>
+                        <x>-1</x>
+                        <y>0</y>
+                        <z>0</z>
+                </axis>
+        </animation>
+
+        <animation>
+                <type>rotate</type>
+                <object-name>Aiguille1</object-name>
+                <property>/engines/engine[1]/rpm</property>
+                <min>0</min>
+                <max>4500</max>
+                <interpolation>
+                        <entry>
+                        <ind>0</ind>
+                        <dep>0</dep>
+                        </entry>
+                        <entry>
+                        <ind>4500</ind>
+                        <dep>330</dep>
+                        </entry>
+                </interpolation>
+                <center>
+                        <x-m>0</x-m>
+                        <y-m>0</y-m>
+                        <z-m>0</z-m>
+                </center>
+                <axis>
+                        <x>-1</x>
+                        <y>0</y>
+                        <z>0</z>
+                </axis>
+        </animation>
+</PropertyList>

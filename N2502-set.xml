@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<!--
+*****************************************************************
+Gérard  ROBIN
+
+************************************************************************
+-->
+
+<PropertyList>
+
+ <sim include="Help/Noratlas-help.xml">
+
+    <description>Nord-2502  Noratlas</description>
+    <author>Gerard ROBIN</author>
+    <status>alpha, "GPL Copyright"</status>
+    <version>0.2 7-0406</version>
+
+    <flight-model>jsb</flight-model>
+    <aero>n2502</aero>
+    <startup>
+            <splash-texture>Aircraft/Noratlas/Nord-2502-splash.rgb</splash-texture>
+    </startup>
+
+    <systems>
+        <autopilot>
+                <path>Aircraft/Noratlas/System/autopilot.xml</path>
+        </autopilot>
+    </systems>
+
+    <sound>
+        <path>Aircraft/Noratlas/Sounds/sound.xml</path>
+    </sound>
+
+   <submodels>
+        <serviceable type="bool">true</serviceable>
+        <path>Aircraft/Noratlas/Models/submodels.xml</path>
+    </submodels>
+
+  <view>
+    <internal archive="y">true</internal>
+    <config>
+        <!-- x/y/z == right/up/back -->
+        <x-offset-m archive="y">-0.474958</x-offset-m>
+        <y-offset-m archive="y">0.90</y-offset-m>
+        <z-offset-m archive="y">-6.09852</z-offset-m>
+        <pitch-offset-deg archive="y">-16.0</pitch-offset-deg>
+        <default-field-of-view-deg type="double">72.0</default-field-of-view-deg>
+    </config>
+  </view>
+
+    <current-view>
+            <field-of-view type="double">72.0</field-of-view>
+    </current-view>
+
+
+  <chase-distance-m>-40</chase-distance-m>
+
+    <model>
+        <path>Aircraft/Noratlas/Models/Nord-2502-model.xml</path>
+    </model>
+
+
+    <hud>
+        <enable3d>true</enable3d>
+    </hud>
+
+    <flaps>
+        <setting>0.00</setting>
+        <setting>0.20</setting>
+        <setting>0.40</setting>
+        <setting>0.60</setting>
+        <setting>1</setting>
+    </flaps>
+
+ </sim>
+
+    <engines>
+        <engine n="0">
+                <rpm type="double">0</rpm>
+        </engine>
+        <engine n="1">
+                <rpm type="double">0</rpm>
+        </engine>
+        <engine n="2">
+                <running>false</running>
+        </engine>
+        <engine n="3">
+                <running>false</running>
+        </engine>
+    </engines>
+
+
+    <ai>
+        <submodels>
+            <trigger type="bool">false</trigger>
+        </submodels>
+    </ai>
+
+    <controls>
+    <gear>
+            <brake-parking type="double">1</brake-parking>
+        </gear>
+        <engines>
+            <engine n="0">
+                    <magnetos>0</magnetos>
+                    <throttle type="double">0.2</throttle>
+            </engine>
+            <engine n="1">
+                    <magnetos>0</magnetos>
+                    <throttle type="double">0.2</throttle>
+            </engine>
+        </engines>
+    </controls>
+
+    <input include="Inputs/Nord-input.xml">
+
+    </input>
+
+
+    <nasal>
+                <electrical>
+                        <file>Aircraft/Noratlas/System/electrical.nas</file>
+                </electrical>
+                <Start>
+                        <file>Aircraft/Noratlas/System/Start.nas</file>
+                </Start>
+                <Throttle>
+                        <file>Aircraft/Noratlas/System/Throttle.nas</file>
+                </Throttle>
+                <Cmd>
+                        <file>Aircraft/Noratlas/System/Noratlas.nas</file>
+                </Cmd>
+    </nasal>
+
+
+</PropertyList>

@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!--
+Usable with FlightGear
+Property of Gerard Robin
+Copyright License:  GPL
+-->
+<PropertyList>
+
+    <keyboard>
+        <key  n="32">
+                <name>space</name>
+                <binding>
+                        <command>nasal</command>
+                        <script>
+                                Start.Starter();
+                        </script>
+                </binding>
+                <mod-up>
+                <binding>
+                        <command>nasal</command>
+                        <script>
+                                Start.Starter_end();
+                        </script>
+                </binding>
+                </mod-up>
+        </key>
+        <key n="37">
+                <name>%</name>
+                <desc>Stop Engine</desc>
+                                <binding>
+                                        <command>nasal</command>
+                                        <script>Start.Cutoff_Cmd();</script>
+                            </binding>
+        </key>
+
+        <key n="125">
+                <name>}</name>
+                <desc>Master Electric  Switch  and Increase Magneto on Selected Engine</desc>
+
+                <binding>
+                    <command>nasal</command>
+                    <script>controls.stepMagnetos(1)</script>
+                </binding>
+
+                <binding>  <!-- will be moved to panel specific button-->
+                        <command>property-assign</command>
+                        <property>/controls/electric/master-switch</property>
+                        <value>1</value>
+                </binding>
+        </key>
+
+        <key n="123">
+                <name>{</name>
+                <desc>Master Electric  Switch  and Increase Magneto on Selected Engine</desc>
+
+                <binding>
+                    <command>nasal</command>
+                    <script>controls.stepMagnetos(-1)</script>
+                </binding>
+
+                <binding>  <!-- will be moved to panel specific button-->
+                        <command>property-assign</command>
+                        <property>/controls/electric/master-switch</property>
+                        <value>0</value>
+                </binding>
+        </key>
+
+
+        <key n="100">
+                <name>d</name>
+                <desc>Toggle Porte</desc>
+                <binding>
+                        <command>property-toggle</command>
+                        <property>fdm/jsbsim/fcs/ar-latg-porte-cmd-norm</property>
+                </binding>
+                <binding>
+                        <command>property-toggle</command>
+                        <property>fdm/jsbsim/fcs/ar-latd-porte-cmd-norm</property>
+                </binding>
+        </key>
+
+        <key n="68">
+                <name>D</name>
+                <desc>Toggle Porte</desc>
+                <binding>
+                        <command>property-toggle</command>
+                        <property>fdm/jsbsim/fcs/ar-g-porte-cmd-norm</property>
+                </binding>
+                <binding>
+                        <command>property-toggle</command>
+                        <property>fdm/jsbsim/fcs/ar-d-porte-cmd-norm</property>
+                </binding>
+                <binding>
+                        <command>property-toggle</command>
+                        <property>fdm/jsbsim/fcs/rampe-cmd-norm</property>
+                </binding>
+        </key>
+
+        <key n="10">
+                <name>Ctrl-j</name>
+                <desc>Jump-Signal</desc>
+                <binding>
+                        <command>nasal</command>
+                        <script>Cmd.Parachuter_Cmd();</script>
+                </binding>
+        </key>
+
+<!--==================temporary unactable  the prop pitch Key===remain  Constant speed Propeller============-->
+
+        <key n="78">
+            <name>N</name>
+            <binding>
+                        <command>property-assign</command>
+                        <property>sim/model/dummy</property>
+                        <value>0</value>
+             </binding>
+        </key>
+
+        <key n="110">
+            <name>n</name>
+            <binding>
+                        <command>property-assign</command>
+                        <property>sim/model/dummy</property>
+                        <value>0</value>
+             </binding>
+        </key>
+
+    </keyboard>
+</PropertyList>
