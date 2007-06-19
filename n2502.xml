@@ -4,10 +4,13 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
+
+
+
  <fileheader>
   <author> Aeromatic v 0.9 </author>
-  <filecreationdate> 20-05-2007 </filecreationdate>
-  <version> 0.1 </version>
+  <filecreationdate> 09-06-2007 </filecreationdate>
+  <version> 0.2 </version>
   <description> Nord 2502 Noratlas </description>
  </fileheader>
 
@@ -15,12 +18,12 @@
 <metrics>
    <wingarea  unit="FT2"> 1087.27 </wingarea>
    <wingspan  unit="FT" >  110.24 </wingspan>
-   <wing_incidence>          2.00 </wing_incidence>
-   <chord     unit="FT" >    9.86 </chord>
-   <htailarea unit="FT2">  271.82 </htailarea>
-   <htailarm  unit="FT" >   32.44 </htailarm>
-   <vtailarea unit="FT2">  217.45 </vtailarea>
-   <vtailarm  unit="FT" >   32.44 </vtailarm>
+   <wing_incidence>          1.00 </wing_incidence>
+   <chord     unit="FT" >    12.10 </chord>
+   <htailarea unit="FT2">  177 </htailarea>
+   <htailarm  unit="FT" >   42</htailarm>
+   <vtailarea unit="FT2">  119.47</vtailarea>
+   <vtailarm  unit="FT" >   42</vtailarm>
    <location name="AERORP" unit="IN">
      <x> 0.00 </x>
      <y>   0.00 </y>
@@ -300,8 +303,8 @@
        <y>   0.00 </y>
        <z> -21.63 </z>
      </location>
-     <capacity unit="LBS"> 3000 </capacity>
-     <contents unit="LBS"> 1500 </contents>
+     <capacity unit="LBS"> 8000 </capacity>
+     <contents unit="LBS"> 4000 </contents>
   </tank>
 
   <tank type="FUEL" number="2">
@@ -310,8 +313,8 @@
        <y>   0.00 </y>
        <z> -21.63 </z>
      </location>
-     <capacity unit="LBS"> 3000 </capacity>
-     <contents unit="LBS"> 1500 </contents>
+     <capacity unit="LBS"> 8000 </capacity>
+     <contents unit="LBS"> 4000 </contents>
   </tank>
 
   <tank type="FUEL" number="3">
@@ -345,6 +348,8 @@
   <property>fcs/ar-g-porte-cmd-norm</property>
   <property>fcs/ar-d-porte-cmd-norm</property>
   <property>fcs/rampe-cmd-norm</property>
+  <property>/controls/engines/engine[4]/throttle</property>
+
 
   <channel name="Pitch">
    <summer name="Pitch Trim Sum">
@@ -381,8 +386,8 @@
    <aerosurface_scale name="Left Aileron Control">
       <input>fcs/roll-trim-sum</input>
       <range>
-        <min> -0.35 </min>
-        <max>  0.35 </max>
+        <min> -0.20 </min>
+        <max>  0.20 </max>
       </range>
       <output>fcs/left-aileron-pos-rad</output>
    </aerosurface_scale>
@@ -390,8 +395,8 @@
    <aerosurface_scale name="Right Aileron Control">
       <input>fcs/roll-trim-sum</input>
       <range>
-        <min> -0.35 </min>
-        <max>  0.35 </max>
+        <min> -0.20 </min>
+        <max>  0.20 </max>
       </range>
       <output>fcs/right-aileron-pos-rad</output>
    </aerosurface_scale>
@@ -403,8 +408,8 @@
       <input>fcs/rudder-cmd-norm</input>
       <input>fcs/yaw-trim-cmd-norm</input>
       <limit>
-        <min> -0.35 </min>
-        <max>  0.35 </max>
+        <min> -0.27 </min>
+        <max>  0.27 </max>
       </limit>
    </summer>
 
@@ -428,20 +433,25 @@
           <time>      0 </time>
        </setting>
        <setting>
-          <position> 13 </position>
-          <time>      3</time>
+          <position> 10 </position>
+          <time>      6 </time>
        </setting>
        <setting>
-          <position> 27 </position>
-          <time>      3 </time>
+          <position> 20 </position>
+          <time>      6 </time>
+       </setting>
+       <setting>
+          <position> 30 </position>
+          <time>      6 </time>
        </setting>
        <setting>
           <position> 40 </position>
-          <time>      3 </time>
+          <time>      6 </time>
        </setting>
      </traverse>
      <output>fcs/flap-pos-deg</output>
    </kinematic>
+
 
    <aerosurface_scale name="Flap Position Normalizer">
             <input>fcs/flaps-control</input>
@@ -496,22 +506,88 @@
 
   <channel name="Throttle">
 
-    <pure_gain name="Throttle2">
+        <scheduled_gain name="Throttle0 Cmd Norm">
+              <input>/controls/engines/engine[0]/condition</input>
+            <table>
+                <independentVar>/controls/engines/engine[4]/throttle</independentVar>
+                <tableData>
+                    0.0	0.0
+                    0.8	1
+                    1           1
+                </tableData>
+            </table>
+        </scheduled_gain>
+
+        <scheduled_gain name="Throttle2 Cmd Norm">
+            <input>/controls/engines/engine[2]/condition</input>
+            <table>
+                <independentVar>/controls/engines/engine[4]/throttle</independentVar>
+                <tableData>
+                    0.0	0.0
+                    0.8	0.0
+                    1           1
+                </tableData>
+            </table>
+            <output>/controls/engines/engine[2]/throttle</output>
+        </scheduled_gain>
+
+        <summer name="Throttle0">
+            <input>fcs/throttle0-cmd-norm</input>
+            <clipto>
+                <min>0.2</min>
+                <max>1.0</max>
+            </clipto>
+            <output>/controls/engines/engine[0]/throttle</output>
+        </summer>
+
+        <scheduled_gain name="Throttle1 Cmd Norm">
+              <input>/controls/engines/engine[1]/condition</input>
+            <table>
+                <independentVar>/controls/engines/engine[4]/throttle</independentVar>
+                <tableData>
+                    0.0	0.0
+                    0.8	1
+                    1           1
+                </tableData>
+            </table>
+        </scheduled_gain>
+
+        <scheduled_gain name="Throttle3 Cmd Norm">
+            <input>/controls/engines/engine[3]/condition</input>
+            <table>
+                <independentVar>/controls/engines/engine[4]/throttle</independentVar>
+                <tableData>
+                    0.0	0.0
+                    0.8	0.0
+                    1           1
+                </tableData>
+            </table>
+            <output>/controls/engines/engine[3]/throttle</output>
+        </scheduled_gain>
+
+        <summer name="Throttle1">
+            <input>fcs/throttle1-cmd-norm</input>
+            <clipto>
+                <min>0.2</min>
+                <max>1.0</max>
+            </clipto>
+            <output>/controls/engines/engine[1]/throttle</output>
+        </summer>
+
+
+
+
+
+
+    <!--<pure_gain name="Throttle2">
         <input>fcs/throttle-cmd-norm</input>
         <gain>1.2</gain>
         <output>fcs/throttle-pos-norm</output>
-    </pure_gain>
+    </pure_gain>-->
 
     </channel>
 
-    <channel name="Throttle">
 
-        <pure_gain name="Throttle3">
-            <input>fcs/throttle-cmd-norm</input>
-            <gain>1.2</gain>
-            <output>fcs/throttle-pos-norm</output>
-        </pure_gain>
-    </channel>
 
 
     <channel name="External">
@@ -591,6 +667,31 @@
             </traverse>
             <output>fcs/rampe-pos-norm</output>
             </kinematic>
+
+            <switch name="Av Latg Porte Cmd Norm">
+                <default value="0"/>
+                <test  logic="AND" value="1">
+                    /controls/gear/brake-parking == 1
+                    velocities/vc-kts lt 10
+                </test>
+            </switch>
+
+            <kinematic name="Av Lat GPorte">
+            <input>fcs/av-latg-porte-cmd-norm</input>
+            <traverse>
+                    <setting>
+                            <position>0</position>
+                            <time>0</time>
+                    </setting>
+                    <setting>
+                            <position>1</position>
+                            <time>7</time>
+                    </setting>
+            </traverse>
+            <output>fcs/av-latg-porte-pos-norm</output>
+            </kinematic>
+
+
     </channel>
 
  </flight_control>
@@ -598,6 +699,22 @@
  <aerodynamics>
 
   <axis name="LIFT">
+      <function name="aero/function/kCLge">
+            <description>Change_in_lift_due_to_ground_effect</description>
+            <product>
+                  <table>
+                      <independentVar>aero/h_b-mac-ft</independentVar>
+                      <tableData>
+                          0.0000	1.2000
+                          0.1000	1.1500
+                          0.1500	1.0900
+                          0.2000	1.0200
+                          1.1000	1.0000
+                      </tableData>
+                  </table>
+            </product>
+        </function>
+       <!--Change_in_lift_due_to_ground_effect from Boeing324 model-->
 
     <function name="aero/coefficient/CLalpha">
       <description>Lift_due_to_alpha</description>
@@ -609,8 +726,8 @@
             <tableData>
               -0.20 -0.680
                0.00 0.200
-             0.23    1.200
-               0.60 0.600
+             0.23    1.400
+               0.60 0.800
             </tableData>
           </table>
       </product>
@@ -622,11 +739,11 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.05000 </value>
+           <value> 0.07000 </value>
        </product>
     </function>
 
-    <function name="aero/coefficient/dCLsb">
+    <!--<function name="aero/coefficient/dCLsb">
        <description>Delta_Lift_due_to_speedbrake</description>
        <product>
            <property>aero/qbar-psf</property>
@@ -634,7 +751,7 @@
            <property>fcs/speedbrake-pos-norm</property>
            <value>-0.08</value>
        </product>
-    </function>
+    </function>-->
 
     <function name="aero/coefficient/CLde">
        <description>Lift_due_to_Elevator_Deflection</description>
@@ -674,7 +791,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>aero/cl-squared</property>
-           <value>0.042</value>
+           <value>0.034</value>
          </product>
     </function>
 
@@ -701,7 +818,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.00183 </value>
+           <value> 0.000975</value>
          </product>
     </function>
 
@@ -715,7 +832,7 @@
          </product>
     </function>
 
-    <function name="aero/coefficient/CDsb">
+    <!--<function name="aero/coefficient/CDsb">
        <description>Drag_due_to_speedbrakes</description>
          <product>
            <property>aero/qbar-psf</property>
@@ -723,7 +840,7 @@
            <property>fcs/speedbrake-pos-norm</property>
            <value>0.017</value>
          </product>
-    </function>
+    </function>-->
 
     <function name="aero/coefficient/CDbeta">
        <description>Drag_due_to_sideslip</description>
@@ -865,6 +982,24 @@
           </table>
        </product>
     </function>
+
+    <!--<function name="aero/coefficient/Cmdf">
+       <description>Pitch_moment_due_to_flap</description>
+       <product>
+          <property>aero/qbar-psf</property>
+          <property>metrics/Sw-sqft</property>
+          <property>metrics/cbarw-ft</property>
+          <property>fcs/flap-pos-deg</property>
+          <table>
+            <independentVar lookup="row">velocities/mach</independentVar>
+            <tableData>
+              0.0     0
+              2.0     0.001
+            </tableData>
+          </table>
+       </product>
+    </function>-->
+
 
     <function name="aero/coefficient/Cmq">
        <description>Pitch_moment_due_to_pitch_rate</description>

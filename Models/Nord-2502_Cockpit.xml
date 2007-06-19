@@ -65,7 +65,7 @@
 
     <model>
         <name>PanelV</name>
-        <path>Aircraft/Noratlas//Panels/Nord-2502_FPanel.xml</path>
+        <path>Aircraft/Noratlas/Panels/Nord-2502_FPanel.xml</path>
         <offsets>
                 <x-m>-6.72895</x-m>
                 <y-m>0</y-m>
@@ -229,9 +229,9 @@
             <property>surface-positions/flap-pos-norm</property>
             <factor>360</factor>
             <center>
-                    <x-m>-6.49097</x-m>
+                    <x-m>-6.46967</x-m>
                     <y-m>0</y-m>
-                    <z-m>-0.0127427</z-m>
+                    <z-m>0.00957653</z-m>
             </center>
             <axis>
                     <x>0.0</x>

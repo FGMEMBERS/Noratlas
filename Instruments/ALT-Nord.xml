@@ -15,7 +15,7 @@
                 <name>Bouton</name>
                 <path>Aircraft/Noratlas/Instruments/Bouton_pt-Nord.xml</path>
                 <offsets>
-                    <x-m>0.0109708</x-m>
+                    <x-m>0.016</x-m>
                     <y-m>-0.030431</y-m>
                     <z-m>-0.030431</z-m>
                     <pitch-deg>0</pitch-deg>

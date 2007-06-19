@@ -418,23 +418,59 @@ Copyright License:  GPL
                     <z2-m>0.470222</z2-m>
             </axis>
     </animation>
+    <animation>
+            <type>rotate</type>
+            <object-name>GTrain-AVPorte</object-name>
+            <object-name>GTrain-AVPorte-Doublage</object-name>
+            <property>gear/gear[2]/position-norm</property>
+            <interpolation>
+                    <entry>
+                            <ind>0.0</ind>
+                            <dep>0</dep>
+                    </entry>
+                    <entry>
+                            <ind>0.25</ind>
+                            <dep>0</dep>
+                    </entry>
+                    <entry>
+                            <ind>0.75</ind>
+                            <dep>-20</dep>
+                    </entry>
+                    <entry>
+                            <ind>1.0</ind>
+                            <dep>-50</dep>
+                    </entry>
+            </interpolation>
+                <center>
+                        <x-m>-0.112245</x-m>
+                        <y-m>0</y-m>
+                        <z-m>0.258836</z-m>
+                </center>
+                <axis>
+                        <x>0</x>
+                        <y>-1</y>
+                        <z>0</z>
+                </axis>
+    </animation>
+
 
         <animation>
                 <type>rotate</type>
                 <object-name>GTrain</object-name>
+                 <object-name>GTrain-Frein</object-name>
                 <property>gear/gear[1]/position-norm</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
-                                <dep>100</dep>
+                                <dep>95</dep>
                         </entry>
                         <entry>
                                 <ind>0.25</ind>
-                                <dep>80</dep>
+                                <dep>95</dep>
                         </entry>
                         <entry>
                                 <ind>0.75</ind>
-                                <dep>0.0</dep>
+                                <dep>40</dep>
                         </entry>
                         <entry>
                                 <ind>1.0</ind>
@@ -442,9 +478,9 @@ Copyright License:  GPL
                         </entry>
                 </interpolation>
                 <center>
-                        <x-m>0.557354</x-m>
-                        <y-m>0</y-m>
-                        <z-m>-0.041322</z-m>
+                    <x-m>0.36488</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0.126867</z-m>
                 </center>
                 <axis>
                         <x>0</x>
@@ -460,15 +496,15 @@ Copyright License:  GPL
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
-                                <dep>100</dep>
+                                <dep>95</dep>
                         </entry>
                         <entry>
                                 <ind>0.25</ind>
-                                <dep>80</dep>
+                                <dep>95</dep>
                         </entry>
                         <entry>
                                 <ind>0.75</ind>
-                                <dep>0.0</dep>
+                                <dep>40</dep>
                         </entry>
                         <entry>
                                 <ind>1.0</ind>
@@ -476,9 +512,9 @@ Copyright License:  GPL
                         </entry>
                 </interpolation>
                 <center>
-                        <x-m>0.557354</x-m>
-                        <y-m>0</y-m>
-                        <z-m>-0.041322</z-m>
+                    <x-m>0.36488</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0.126867</z-m>
                 </center>
                 <axis>
                         <x>0</x>
@@ -487,7 +523,7 @@ Copyright License:  GPL
                 </axis>
         </animation>
 
-        <animation>
+        <!--<animation>
                 <type>select</type>
                 <object-name>GTrain-Verin</object-name>
                 <condition>
@@ -496,7 +532,7 @@ Copyright License:  GPL
                                 <value>0.95</value>
                         </greater-than>
                 </condition>
-        </animation>
+        </animation>-->
 
         <animation>
                 <type>rotate</type>
@@ -505,15 +541,15 @@ Copyright License:  GPL
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
-                                <dep>100</dep>
+                                <dep>95</dep>
                         </entry>
                         <entry>
                                 <ind>0.25</ind>
-                                <dep>80</dep>
+                                <dep>95</dep>
                         </entry>
                         <entry>
                                 <ind>0.75</ind>
-                                <dep>0.0</dep>
+                                <dep>40</dep>
                         </entry>
                         <entry>
                                 <ind>1.0</ind>
@@ -521,9 +557,42 @@ Copyright License:  GPL
                         </entry>
                 </interpolation>
                 <center>
-                        <x-m>0.557354</x-m>
-                        <y-m>0</y-m>
-                        <z-m>-0.041322</z-m>
+                    <x-m>0.36488</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0.126867</z-m>
+                </center>
+                <axis>
+                        <x>0</x>
+                        <y>-1</y>
+                        <z>0</z>
+                </axis>
+        </animation>
+        <animation>
+                <type>rotate</type>
+                <object-name>GTrain-Verin</object-name>
+                <property>gear/gear[1]/position-norm</property>
+                <interpolation>
+                        <entry>
+                                <ind>0.0</ind>
+                                <dep>-40</dep>
+                        </entry>
+                        <entry>
+                                <ind>0.25</ind>
+                                <dep>-40</dep>
+                        </entry>
+                        <entry>
+                                <ind>0.75</ind>
+                                <dep>-16.84210526315789474</dep>
+                        </entry>
+                        <entry>
+                                <ind>1.0</ind>
+                                <dep>0.0</dep>
+                        </entry>
+                </interpolation>
+                <center>
+                    <x-m>0.769672</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-0.620987</z-m>
                 </center>
                 <axis>
                         <x>0</x>
@@ -629,21 +698,57 @@ Copyright License:  GPL
     </animation>
 
     <animation>
+            <type>rotate</type>
+            <object-name>DTrain-AVPorte</object-name>
+            <object-name>DTrain-AVPorte-Doublage</object-name>
+            <property>gear/gear[2]/position-norm</property>
+            <interpolation>
+                    <entry>
+                            <ind>0.0</ind>
+                            <dep>0</dep>
+                    </entry>
+                    <entry>
+                            <ind>0.25</ind>
+                            <dep>0</dep>
+                    </entry>
+                    <entry>
+                            <ind>0.75</ind>
+                            <dep>-20</dep>
+                    </entry>
+                    <entry>
+                            <ind>1.0</ind>
+                            <dep>-50</dep>
+                    </entry>
+            </interpolation>
+                <center>
+                        <x-m>-0.112245</x-m>
+                        <y-m>0</y-m>
+                        <z-m>0.258836</z-m>
+                </center>
+                <axis>
+                        <x>0</x>
+                        <y>-1</y>
+                        <z>0</z>
+                </axis>
+    </animation>
+
+    <animation>
                 <type>rotate</type>
                 <object-name>DTrain</object-name>
+                <object-name>DTrain-Frein</object-name>
                 <property>gear/gear[2]/position-norm</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
-                                <dep>100</dep>
+                                <dep>95</dep>
                         </entry>
                         <entry>
                                 <ind>0.25</ind>
-                                <dep>80</dep>
+                                <dep>95</dep>
                         </entry>
                         <entry>
                                 <ind>0.75</ind>
-                                <dep>0.0</dep>
+                                <dep>40</dep>
                         </entry>
                         <entry>
                                 <ind>1.0</ind>
@@ -651,9 +756,9 @@ Copyright License:  GPL
                         </entry>
                 </interpolation>
                 <center>
-                        <x-m>0.557354</x-m>
+                        <x-m>0.36488</x-m>
                         <y-m>0</y-m>
-                        <z-m>-0.041322</z-m>
+                        <z-m>0.126867</z-m>
                 </center>
                 <axis>
                         <x>0</x>
@@ -669,15 +774,15 @@ Copyright License:  GPL
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
-                                <dep>100</dep>
+                                <dep>95</dep>
                         </entry>
                         <entry>
                                 <ind>0.25</ind>
-                                <dep>80</dep>
+                                <dep>95</dep>
                         </entry>
                         <entry>
                                 <ind>0.75</ind>
-                                <dep>0.0</dep>
+                                <dep>40</dep>
                         </entry>
                         <entry>
                                 <ind>1.0</ind>
@@ -685,9 +790,9 @@ Copyright License:  GPL
                         </entry>
                 </interpolation>
                 <center>
-                        <x-m>0.557354</x-m>
-                        <y-m>0</y-m>
-                        <z-m>-0.041322</z-m>
+                    <x-m>0.36488</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0.126867</z-m>
                 </center>
                 <axis>
                         <x>0</x>
@@ -696,7 +801,7 @@ Copyright License:  GPL
                 </axis>
         </animation>
 
-        <animation>
+        <!--<animation>
                 <type>select</type>
                 <object-name>DTrain-Verin</object-name>
                 <condition>
@@ -705,7 +810,7 @@ Copyright License:  GPL
                                 <value>0.95</value>
                         </greater-than>
                 </condition>
-        </animation>
+        </animation>-->
 
         <animation>
                 <type>rotate</type>
@@ -714,15 +819,15 @@ Copyright License:  GPL
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
-                                <dep>100</dep>
+                                <dep>95</dep>
                         </entry>
                         <entry>
                                 <ind>0.25</ind>
-                                <dep>80</dep>
+                                <dep>95</dep>
                         </entry>
                         <entry>
                                 <ind>0.75</ind>
-                                <dep>0.0</dep>
+                                <dep>40</dep>
                         </entry>
                         <entry>
                                 <ind>1.0</ind>
@@ -730,9 +835,42 @@ Copyright License:  GPL
                         </entry>
                 </interpolation>
                 <center>
-                        <x-m>0.557354</x-m>
-                        <y-m>0</y-m>
-                        <z-m>-0.041322</z-m>
+                    <x-m>0.36488</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0.126867</z-m>
+                </center>
+                <axis>
+                        <x>0</x>
+                        <y>-1</y>
+                        <z>0</z>
+                </axis>
+        </animation>
+        <animation>
+                <type>rotate</type>
+                <object-name>DTrain-Verin</object-name>
+                <property>gear/gear[1]/position-norm</property>
+                <interpolation>
+                        <entry>
+                                <ind>0.0</ind>
+                                <dep>-40</dep>
+                        </entry>
+                        <entry>
+                                <ind>0.25</ind>
+                                <dep>-40</dep>
+                        </entry>
+                        <entry>
+                                <ind>0.75</ind>
+                                <dep>-16.84210526315789474</dep>
+                        </entry>
+                        <entry>
+                                <ind>1.0</ind>
+                                <dep>0.0</dep>
+                        </entry>
+                </interpolation>
+                <center>
+                    <x-m>0.769672</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-0.620987</z-m>
                 </center>
                 <axis>
                         <x>0</x>
@@ -825,7 +963,7 @@ Copyright License:  GPL
                                 <ind>1.0</ind>
                                 <dep>-100.0</dep>
                         </entry>
-                        </interpolation>
+                </interpolation>
                 <axis>
                         <x1-m>-7.1247</x1-m>
                         <y1-m>-0.250994</y1-m>
@@ -833,6 +971,42 @@ Copyright License:  GPL
                         <x2-m>-3.80524</x2-m>
                         <y2-m>-0.52779</y2-m>
                         <z2-m>-1.6502</z2-m>
+                </axis>
+        </animation>
+
+        <animation>
+                <type>rotate</type>
+                <object-name>AVTrain-AVPorte</object-name>
+                <object-name>AVTrain-AVPorte-Doublage</object-name>
+                <property>gear/gear[0]/position-norm</property>
+                <interpolation>
+                        <entry>
+                                <ind>0.0</ind>
+                                <dep>0</dep>
+                        </entry>
+                        <entry>
+                                <ind>0.25</ind>
+                                <dep>5</dep>
+                        </entry>
+                        <entry>
+                                <ind>0.75</ind>
+                                <dep>10</dep>
+                        </entry>
+                        <entry>
+                                <ind>1.0</ind>
+                                <dep>100</dep>
+                        </entry>
+                </interpolation>
+
+                <center>
+                        <x-m>-6.28326</x-m>
+                        <y-m>0</y-m>
+                        <z-m>-1.04793</z-m>
+                </center>
+                <axis>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
                 </axis>
         </animation>
 
@@ -864,9 +1038,9 @@ Copyright License:  GPL
                         <z-m>-0.74348</z-m>
                 </center>
                 <axis>
-                <x>0</x>
-                <y>1</y>
-                <z>0</z>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
                 </axis>
         </animation>
 
@@ -1192,6 +1366,24 @@ Copyright License:  GPL
 			<y>0.0</y>
 			<z>0.0</z>
 		</axis>
+        </animation>
+
+        <animation>
+                <type>rotate</type>
+                <object-name>AVPorte-Cabine</object-name>
+                <object-name>AVPorte-Cabine-Doublage</object-name>
+                <property>fdm/jsbsim/fcs/av-latg-porte-pos-norm</property>
+                <factor>95</factor>
+                <center>
+                        <x-m>0</x-m>
+                        <y-m>-0.795389</y-m>
+                        <z-m>-1.4242</z-m>
+                </center>
+                <axis>
+                        <x>1</x>
+                        <y>0</y>
+                        <z>0</z>
+                </axis>
         </animation>
 
 

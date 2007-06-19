@@ -66,9 +66,9 @@ Gérard  ROBIN
 
     <flaps>
         <setting>0.00</setting>
-        <setting>0.20</setting>
-        <setting>0.40</setting>
-        <setting>0.60</setting>
+        <setting>0.25</setting>
+        <setting>0.50</setting>
+        <setting>0.75</setting>
         <setting>1</setting>
     </flaps>
 
@@ -103,11 +103,11 @@ Gérard  ROBIN
         <engines>
             <engine n="0">
                     <magnetos>0</magnetos>
-                    <throttle type="double">0.2</throttle>
+                    <throttle type="double">0</throttle>
             </engine>
             <engine n="1">
                     <magnetos>0</magnetos>
-                    <throttle type="double">0.2</throttle>
+                    <throttle type="double">0</throttle>
             </engine>
         </engines>
     </controls>
