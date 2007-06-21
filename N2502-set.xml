@@ -109,13 +109,19 @@ Gérard  ROBIN
                     <magnetos>0</magnetos>
                     <throttle type="double">0</throttle>
             </engine>
+            <engine n="2">
+                    <throttle type="double">0</throttle>
+            </engine>
+            <engine n="3">
+                    <throttle type="double">0</throttle>
+            </engine>
         </engines>
     </controls>
 
     <input include="Inputs/Nord-input.xml">
 
     </input>
-
+    <position><altitude-agl-ft>9.16</altitude-agl-ft></position>
 
     <nasal>
                 <electrical>

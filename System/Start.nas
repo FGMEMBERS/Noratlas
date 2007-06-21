@@ -2,19 +2,19 @@
 Starter = func { 		
 	
 	setprop("controls/engines/engine[0]/starter",1);
-	setprop("controls/engines/engine[0]/throttle",0.40);
+	setprop("controls/engines/engine[0]/throttle",0.30);
 	setprop("controls/engines/engine[1]/starter",1);
 	setprop("controls/engines/engine[2]/starter",1);
 	setprop("controls/engines/engine[3]/starter",1);
-	setprop("controls/engines/engine[1]/throttle",0.40);
+	setprop("controls/engines/engine[1]/throttle",0.30);
 }
 Starter_end = func { 	
 	setprop("controls/engines/engine[0]/starter",0);
-	setprop("controls/engines/engine[0]/throttle",0.30);
+	setprop("controls/engines/engine[0]/throttle",0.20);
 	setprop("controls/engines/engine[1]/starter",0);
 	setprop("controls/engines/engine[2]/starter",0);
 	setprop("controls/engines/engine[3]/starter",0);
-	setprop("controls/engines/engine[1]/throttle",0.30);
+	setprop("controls/engines/engine[1]/throttle",0.20);
 	
 }
 

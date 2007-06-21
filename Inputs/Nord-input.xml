@@ -7,7 +7,7 @@ Copyright License:  GPL
 <PropertyList>
 
     <keyboard>
-        <key  n="32">
+        <!--<key  n="32">
                 <name>space</name>
                 <binding>
                         <command>nasal</command>
@@ -23,7 +23,7 @@ Copyright License:  GPL
                         </script>
                 </binding>
                 </mod-up>
-        </key>
+        </key>-->
         <key n="37">
                 <name>%</name>
                 <desc>Stop Engine</desc>

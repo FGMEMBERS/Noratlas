@@ -62,7 +62,7 @@
                 <name>Dummy</name>
                 <path>Aircraft/Noratlas/Instruments/N1_Eng2-Nord.xml</path>
                 <offsets>
-                        <x-m>0.00435654</x-m>
+                        <x-m>0.00225654</x-m>
                         <y-m>-0.0443065</y-m>
                         <z-m>0.118754</z-m>
                         <pitch-deg>0</pitch-deg>
@@ -127,7 +127,7 @@
                 <name>Dummy</name>
                 <path>Aircraft/Noratlas/Instruments/N1_Eng3-Nord.xml</path>
                 <offsets>
-                        <x-m>0.00435654</x-m>
+                        <x-m>0.00222654</x-m>
                         <y-m>-0.0443065</y-m>
                         <z-m>0.028374</z-m>
                         <pitch-deg>0</pitch-deg>
