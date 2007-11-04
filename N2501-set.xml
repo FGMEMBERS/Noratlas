@@ -10,19 +10,19 @@ Gérard  ROBIN
 
  <sim>
 
-    <description>Nord-2502  Noratlas</description>
+    <description>Nord-2501  Noratlas</description>
     <author>Gerard ROBIN</author>
     <status>alpha, "GPL Copyright"</status>
     <version>0.21 7-0406</version>
 
     <flight-model>jsb</flight-model>
-    <aero>n2502</aero>
+    <aero>n2501</aero>
     <startup>
-            <splash-texture>Aircraft/Noratlas/Nord-2502-splash.rgb</splash-texture>
+            <splash-texture>Aircraft/Noratlas/Nord-2501-splash.rgb</splash-texture>
     </startup>
 
      <model>
-        <path>Aircraft/Noratlas/Models/Nord-2502-model.xml</path>
+        <path>Aircraft/Noratlas/Models/Nord-2501-model.xml</path>
     </model>
 
    <submodels>
@@ -30,7 +30,7 @@ Gérard  ROBIN
         <path>Aircraft/Noratlas/Models/submodels.xml</path>
     </submodels>
 
-    <help include="Help/Nord-2502-help.xml"/>
+    <help include="Help/Nord-2501-help.xml"/>
 
   </sim>
 
@@ -41,12 +41,6 @@ Gérard  ROBIN
             </tank>
             <tank n="1">
                 <level-gal_us archive="y">300</level-gal_us>
-            </tank>
-            <tank n="2">
-                <level-gal_us archive="y">50</level-gal_us>
-            </tank>
-            <tank n="3">
-                <level-gal_us archive="y">50</level-gal_us>
             </tank>
         </fuel>
     </consumables>

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+<PropertyList>
+
+        <title>Nord-2502</title>
+        <key>
+                <name>d</name>
+                <desc>Toggle rear side doors open/close</desc>
+        </key>
+        <key>
+                <name>shift D</name>
+                <desc>Toggle rear door  open/close</desc>
+        </key>
+        <key>
+                <name>ctrl j</name>
+                <desc>Go Parachuter</desc>
+        </key>
+        <key>
+                <name>Space or s (depends on your fg update)</name>
+                <desc>Start the Engine</desc>
+        </key>
+
+        <key>
+                <name>$</name>
+                <desc>Turbines   CutOFF </desc>
+        </key>
+
+        <line>========Start and Stop Routine=========</line>
+        <line>To start the engines</line>
+        <line>increase magneto switch  and electric master switch "on" ( key  name "}")</line>
+        <line>start engines ( key   "space" )</line>
+        <line>cutoff turbojets engines  "off" (key name"%" toggle key)</line>
+        <line >wait for the EP Ratio needle close to 1.1</line>
+        <line>then take off</line>
+        <line></line>
+        <line>To take off</line>
+        <line>Set Flaps to position 2 (depress twice key  "]", right bracket ) </line>
+        <line>Unlock Brake parking  (shift B) </line>
+        <line>Push the throttle to maximum</line>
+        <line>When speed 70 knots pull the stick</line>
+        <line>the aircraft will take off</line>
+        <line></line>
+        <line>To stop the engines</line>
+        <line>cutoff turbojets engines  "on" (key name"%" toggle key)</line>
+        <line>decrease magneto switch  and electric master switch "off" ( key  name "{")</line>
+        <line></line>
+        <line></line>
+        <line></line>
+        <line>========Specific Engines Throttle =========</line>
+        <line>Nord 2502 has 4 engines : 2 Piston Engine and 2 Turbojets</line>
+        <line></line>
+        <line>When pushing the throttle from 0 to 0.8 </line>
+        <line>--------- the piston engines increase from zero to 1</line>
+        <line></line>
+        <line>------AND THEN</line>
+        <line></line>
+        <line>When pushing the throttle from 0.8 to 1 </line>
+        <line>--------  the turbojet engines increase from zero to 1</line>
+        <line>-------- the piston engines keep the value 1</line>
+        <line></line>
+         <line>throttle   0----------0.2------------------------------0.8---------------1</line>
+         <line>piston     0----------0.2--------------------------------1----------------1</line>
+         <line>turbojet  0-----------0---------------------------------0----------------1</line>
+
+</PropertyList>

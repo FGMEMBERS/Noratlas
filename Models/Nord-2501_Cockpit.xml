@@ -65,7 +65,7 @@
 
     <model>
         <name>PanelV</name>
-        <path>Aircraft/Noratlas/Panels/Nord-2502_FPanel.xml</path>
+        <path>Aircraft/Noratlas/Panels/Nord-2501_FPanel.xml</path>
         <offsets>
                 <x-m>-6.72895</x-m>
                 <y-m>0</y-m>

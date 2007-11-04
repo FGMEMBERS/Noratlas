@@ -14,7 +14,7 @@
 
 
         <model>
-                <name>Altitude</name>
+                <name>ASI</name>
                 <path>Aircraft/Noratlas/Instruments/ASI-Nord.xml</path>
                 <offsets>
                         <x-m>0.0028908</x-m>
@@ -36,7 +36,7 @@
 	</model>
 
          <model>
-                <name>ASI</name>
+                <name>Altitude</name>
                 <path>Aircraft/Noratlas/Instruments/ALT-Nord.xml</path>
                 <offsets>
                         <x-m>-0.0045323</x-m>
@@ -80,7 +80,7 @@
         </model>
 
         <model>
-                <name>AI</name>
+                <name>HI</name>
                 <path>Aircraft/Noratlas/Instruments/HI-Nord.xml</path>
                 <offsets>
                         <x-m>0.00446975</x-m>
@@ -124,7 +124,7 @@
         </model>
 
         <model>
-                <name>ASI</name>
+                <name>TURN</name>
                 <path>Aircraft/Noratlas/Instruments/TURN-Nord.xml</path>
                 <offsets>
                         <x-m>0.00369317</x-m>

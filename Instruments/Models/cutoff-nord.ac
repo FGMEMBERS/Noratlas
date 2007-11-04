@@ -3,7 +3,7 @@ MATERIAL "ac3dmat1" rgb 1 1 1  amb 0.2 0.2 0.2  emis 0 0 0  spec 0 0 0  shi 10  
 OBJECT world
 kids 1
 OBJECT poly
-name "cylinder"
+name "Cutoff"
 loc 0.0113462 0 0
 texture "blanc-rouge.rgb"
 crease 45.000000

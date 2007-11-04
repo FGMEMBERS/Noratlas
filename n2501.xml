@@ -11,7 +11,7 @@
   <author> Aeromatic v 0.9 </author>
   <filecreationdate> 09-06-2007 </filecreationdate>
   <version> 0.2 </version>
-  <description> Nord 2502 Noratlas </description>
+  <description> Nord 2501 Noratlas </description>
   <documentation>
 Specifications (Nord N-2501)
 General characteristics
@@ -48,12 +48,6 @@ Performance
 
     Nord 2501D
     Production version for the German Air Force, replaced some systems components of the N2501 with their equivalent from German manufacturers, 186 built (25 French built and 116 German built).
-
-    Nord 2502A
-    Civil version for UAT with two Turbomeca Marboré II turbojets and two Bristol Hercules 758/759 turboprops of 1650 hp each, five built and two conversions from N2501A.
-
-    Nord 2504
-    Modification of the Nord 2502 intended for antisubmarine warfare role with the French Navy, 24 ordered but only one built.
 
 
 
@@ -300,59 +294,7 @@ Performance
     </thruster>
   </engine>
 
-   <engine file="MarboreII">
-    <location unit="IN">
-      <x> 75.944882 </x>
-      <y> -642.63386</y>
-      <z> 66.322835 </z>
-    </location>
-    <orient unit="DEG">
-      <pitch> 0.00 </pitch>
-      <roll>   0.00 </roll>
-      <yaw>   0.00 </yaw>
-    </orient>
-    <feed>2</feed>
-     <feed>3</feed>
-    <thruster file="direct">
-     <location unit="IN">
-       <x> 75.944882 </x>
-       <y> -642.63386 </y>
-       <z> 66.322835 </z>
-     </location>
-     <orient unit="DEG">
-       <pitch> 0.00 </pitch>
-       <roll>   0.00 </roll>
-       <yaw>   0.00 </yaw>
-     </orient>
-    </thruster>
-  </engine>
 
-   <engine file="MarboreII">
-    <location unit="IN">
-      <x> 75.944882 </x>
-      <y> 642.63386 </y>
-      <z> 66.322835 </z>
-    </location>
-    <orient unit="DEG">
-      <pitch> 0.00 </pitch>
-      <roll>   0.00 </roll>
-      <yaw>   0.00 </yaw>
-    </orient>
-     <feed>2</feed>
-    <feed>3</feed>
-    <thruster file="direct">
-     <location unit="IN">
-       <x> 75.944882 </x>
-       <y> 642.63386 </y>
-       <z> 66.322835 </z>
-     </location>
-     <orient unit="DEG">
-       <pitch> 0.00 </pitch>
-       <roll>   0.00 </roll>
-       <yaw>   0.00 </yaw>
-     </orient>
-    </thruster>
-  </engine>
 
   <tank type="FUEL" number="1">
      <location unit="IN">
@@ -374,46 +316,27 @@ Performance
      <contents unit="LBS"> 3000 </contents>
   </tank>
 
-  <tank type="FUEL" number="3">
-     <location unit="IN">
-       <x> 0.0 </x>
-       <y>   0.00 </y>
-       <z> -50 </z>
-     </location>
-     <capacity unit="LBS"> 1000 </capacity>
-     <contents unit="LBS"> 500 </contents>
-  </tank>
-
-  <tank type="FUEL" number="4">
-     <location unit="IN">
-       <x> 0.0 </x>
-       <y>   0.00 </y>
-       <z> -21.63 </z>
-     </location>
-     <capacity unit="LBS"> 1000</capacity>
-     <contents unit="LBS"> 500 </contents>
-  </tank>
 
 
 
  </propulsion>
 
- <flight_control name="FCS: Nord 2502">
-	<property>/engines/engine[0]/thruster/rpm</property>
-	<property>/engines/engine[1]/thruster/rpm</property>
-	<property>fcs/aileron-pos-norm</property>
-	<property>fcs/ar-latd-porte-cmd-norm</property>
-	<property>fcs/ar-latg-porte-cmd-norm</property>
-	<property>fcs/ar-porte-cmd-norm</property>
-	<property>/controls/engines/engine[4]/throttle</property>
-	<property>/sim/model/controls/supercharger</property>
-	<property>/instrumentation/lights/blinker-kinemat-in</property>
-	<property>/instrumentation/lights/blinker-kinemat-out</property>
-	<property>/instrumentation/lights/beacon-on</property>
-	<property>fcs/cutoff-switch</property>
-	<property>/consumables/fuel/total-fuel-gals</property>
-	<property>gear/gear-cp-pos-norm</property>
-        <property>gear/gear-cp-cmd-norm</property>
+ <flight_control name="FCS: Nord 2501">
+    <property>/engines/engine[0]/thruster/rpm</property>
+    <property>/engines/engine[1]/thruster/rpm</property>
+    <property>fcs/aileron-pos-norm</property>
+    <property>fcs/ar-latd-porte-cmd-norm</property>
+    <property>fcs/ar-latg-porte-cmd-norm</property>
+    <property>fcs/ar-porte-cmd-norm</property>
+    <property>/controls/engines/engine[4]/throttle</property>
+    <property>/sim/model/controls/supercharger</property>
+    <property>/instrumentation/lights/blinker-kinemat-in</property>
+    <property>/instrumentation/lights/blinker-kinemat-out</property>
+    <property>/instrumentation/lights/beacon-on</property>
+    <property>fcs/cutoff-switch</property>
+    <property>/consumables/fuel/total-fuel-gals</property>
+    <property>gear/gear-cp-pos-norm</property>
+    <property>gear/gear-cp-cmd-norm</property>
 
   <channel name="Pitch">
 
@@ -544,6 +467,7 @@ Performance
 
   <channel name="Landing Gear">
 
+
    <switch name="Gear Switch">
                 <default value="/controls/gear/gear-down"/>
                 <test  logic="AND" value="0">
@@ -635,33 +559,10 @@ Performance
 
   <channel name="Throttle">
 
-        <scheduled_gain name="Throttle0 Cmd Norm">
-              <input>/controls/engines/engine[0]/condition</input>
-            <table>
-                <independentVar>/controls/engines/engine[4]/throttle</independentVar>
-                <tableData>
-                    0.0	0.0
-                    0.8	1
-                    1           1
-                </tableData>
-            </table>
-        </scheduled_gain>
 
-        <scheduled_gain name="Throttle2 Cmd Norm">
-            <input>/controls/engines/engine[2]/condition</input>
-            <table>
-                <independentVar>/controls/engines/engine[4]/throttle</independentVar>
-                <tableData>
-                    0.0	0.0
-                    0.8	0.0
-                    1           1
-                </tableData>
-            </table>
-            <output>/controls/engines/engine[2]/throttle</output>
-        </scheduled_gain>
 
-        <summer name="Throttle0">
-            <input>fcs/throttle0-cmd-norm</input>
+        <!--<summer name="Throttle0">
+            <input>/controls/engines/engine[0]/throttle</input>
             <clipto>
                 <min>0.2</min>
                 <max>1.0</max>
@@ -669,39 +570,16 @@ Performance
             <output>/controls/engines/engine[0]/throttle</output>
         </summer>
 
-        <scheduled_gain name="Throttle1 Cmd Norm">
-              <input>/controls/engines/engine[1]/condition</input>
-            <table>
-                <independentVar>/controls/engines/engine[4]/throttle</independentVar>
-                <tableData>
-                    0.0	0.0
-                    0.8	1
-                    1           1
-                </tableData>
-            </table>
-        </scheduled_gain>
 
-        <scheduled_gain name="Throttle3 Cmd Norm">
-            <input>/controls/engines/engine[3]/condition</input>
-            <table>
-                <independentVar>/controls/engines/engine[4]/throttle</independentVar>
-                <tableData>
-                    0.0	0.0
-                    0.8	0.0
-                    1           1
-                </tableData>
-            </table>
-            <output>/controls/engines/engine[3]/throttle</output>
-        </scheduled_gain>
 
         <summer name="Throttle1">
-            <input>fcs/throttle1-cmd-norm</input>
+            <input>/controls/engines/engine[1]/throttle</input>
             <clipto>
                 <min>0.2</min>
                 <max>1.0</max>
             </clipto>
             <output>/controls/engines/engine[1]/throttle</output>
-        </summer>
+        </summer>-->
 
 
 
@@ -744,10 +622,55 @@ Performance
         </switch>
 
         <pure_gain name="Throttle Master Cmd">
-            <input>/controls/engines/engine[4]/throttle</input>
+            <input>/controls/engines/engine[0]/throttle</input>
             <gain>1</gain>
         </pure_gain>
     </channel>
+
+    <channel name="Differential Throttle Cmd">
+
+            <switch name="fcs/differential-throttle-pos-norm">
+                <default value="0"/>
+                <test  logic="AND" value="/controls/flight/rudder">
+                    /gear/gear[0]/wow == 1
+                    gear/gear-pos-norm == 1
+                    velocities/vc-kts lt 30
+                    position/h-agl-ft lt 7
+                    /controls/engines/engine[0]/throttle lt 0.40
+                    /controls/engines/engine[1]/throttle lt 0.40
+                </test>
+            </switch>
+
+            <pure_gain name="Differential Throttle Left Pos Norm">
+                <input>fcs/differential-throttle-pos-norm</input>
+                <gain>1</gain>
+            </pure_gain>
+
+            <pure_gain name="Differential Throttle Right Pos Norm">
+                <input>fcs/differential-throttle-pos-norm</input>
+                <gain>-1</gain>
+            </pure_gain>
+
+            <summer name="Throttle0 Range">
+                <input>/controls/engines/engine[0]/throttle</input>
+                <input>fcs/differential-throttle-left-pos-norm</input>
+                <clipto>
+                    <min>0.2</min>
+                    <max>1.0</max>
+                </clipto>
+                <output>fcs/throttle-cmd-norm[0]</output>
+            </summer>
+
+            <summer name="Throttle1 Range">
+                <input>/controls/engines/engine[1]/throttle</input>
+                <input>fcs/differential-throttle-right-pos-norm</input>
+                <clipto>
+                    <min>0.2</min>
+                    <max>1.0</max>
+                </clipto>
+                <output>fcs/throttle-cmd-norm[1]</output>
+            </summer>
+        </channel>
 
 <documentation>
     unactable  the prop pitch Key===remain  Constant speed Propeller
@@ -799,11 +722,9 @@ Performance
         <summer name="Tank Capacity">
             <input>/consumables/fuel/tank[0]level-gal_us</input>
             <input>/consumables/fuel/tank[1]level-gal_us</input>
-            <input>/consumables/fuel/tank[2]level-gal_us</input>
-            <input>/consumables/fuel/tank[3]level-gal_us</input>
             <clipto>
                 <min>0</min>
-                <max>2728</max>
+                <max>1820</max>
             </clipto>
             <output>/consumables/fuel/total-fuel-gals</output>
         </summer>
@@ -1006,21 +927,7 @@ Performance
             <output>/controls/engines/engine[1]/master-bat</output>
         </switch>
 
-        <switch name="Engine2 Master Bat">
-            <default value="0"/>
-            <test  logic="AND" value="1">
-                /controls/electric/master-switch == 1
-            </test>
-            <output>/controls/engines/engine[2]/master-bat</output>
-        </switch>
 
-        <switch name="Engine3 Master Bat">
-            <default value="0"/>
-            <test  logic="AND" value="1">
-                /controls/electric/master-switch == 1
-            </test>
-            <output>/controls/engines/engine[3]/master-bat</output>
-        </switch>
 
         <switch name="Master Avionics">
             <default value="0"/>
@@ -1097,65 +1004,6 @@ Performance
 
         </channel>
 
-        <channel name="Turbine">
-
-            <kinematic name="Cutoff Switch Delay">
-                <input>fcs/cutoff-switch</input>
-                <traverse>
-                    <setting>
-                        <position>0.0000</position>
-                        <time>0.0000</time>
-                    </setting>
-                    <setting>
-                        <position>1.0000</position>
-                        <time>1.0000</time>
-                    </setting>
-                </traverse>
-            </kinematic>
-
-            <switch name="Fuel Pump2 Cmd">
-                <default value="0"/>
-                <test  logic="AND" value="1">
-                    fcs/cutoff-switch == 1
-                </test>
-            </switch>
-            <pure_gain name="Fuel Pump2">
-                <input>fcs/fuel-pump2-cmd</input>
-                <gain>1</gain>
-                <output>/controls/engines/engine[2]/fuel-pump</output>
-            </pure_gain>
-
-            <switch name="Fuel Pump3 Cmd">
-                <default value="0"/>
-                <test  logic="AND" value="1">
-                    fcs/cutoff-switch == 1
-                </test>
-            </switch>
-            <pure_gain name="Fuel Pump3">
-                <input>fcs/fuel-pump3-cmd</input>
-                <gain>1</gain>
-                <output>/controls/engines/engine[3]/fuel-pump</output>
-            </pure_gain>
-
-            <switch name="Cutoff2 Cmd">
-                <default value="1"/>
-                <test  logic="AND" value="0">
-                    fcs/cutoff-switch-delay == 1
-                    fcs/fuel-pump2-cmd == 1
-                </test>
-                <output>/controls/engines/engine[2]/cutoff-cmd</output>
-            </switch>
-
-            <switch name="Cutoff3 Cmd">
-                <default value="1"/>
-                <test  logic="AND" value="0">
-                    fcs/cutoff-switch-delay == 1
-                    fcs/fuel-pump3-cmd == 1
-                </test>
-                <output>/controls/engines/engine[3]/cutoff-cmd</output>
-            </switch>
-
-    </channel>
 
  </flight_control>
 
@@ -1178,19 +1026,20 @@ Performance
         </function>
 
         <function name="aero/function/kCLpw">
-        <description>Change_in_lift_due_to_propeller_wash</description>
-        <product>
-                <table>
-                    <independentVar lookup="row" >aero/qbar-psf</independentVar>
-                    <independentVar lookup="column">propulsion/engine/thrust-coefficient</independentVar>
-                    <tableData>
-                                        0.040  0.000
-                        00.0000	  1.410  1.000
-                        50.0000	  1.000  1.000
-                    </tableData>
-                </table>
+            <description>Change_in_lift_due_to_propeller_wash</description>
+            <product>
+                  <table>
+                      <independentVar lookup="row" >aero/qbar-psf</independentVar>
+                      <independentVar lookup="column">propulsion/engine/thrust-coefficient</independentVar>
+                      <tableData>
+                                          0.040  0.000
+                          00.0000	  1.410  1.000
+                          50.0000	  1.000  1.000
+                      </tableData>
+                  </table>
             </product>
         </function>
+
 <documentation>
     must be improved
     this is a try : the propellerwash effect on the wing, at low speed
@@ -1201,7 +1050,6 @@ Performance
 
 
 
-
   <axis name="LIFT">
     <function name="aero/coefficient/CLalpha">
       <description>Lift_due_to_alpha</description>
@@ -1209,7 +1057,7 @@ Performance
           <property>aero/qbar-psf</property>
           <property>metrics/Sw-sqft</property>
           <property>aero/function/kCLge</property>
-           <property>aero/function/kCLpw</property>
+          <property>aero/function/kCLpw</property>
           <table>
             <independentVar lookup="row">aero/alpha-rad</independentVar>
             <tableData>
@@ -1235,7 +1083,8 @@ Performance
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-norm</property>
-            <property>aero/function/kCLpw</property>
+           <property>aero/function/kCLge</property>
+          <property>aero/function/kCLpw</property>
            <value> 0.6</value>
        </product>
     </function>

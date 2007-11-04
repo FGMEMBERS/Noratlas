@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+<!--                   Auteur :      Gerard ROBIN                       COPYRIGHT-->
+<PropertyList>
+
+	<path>nord-2502-pilote.ac</path>
+	<texture-path>Textures/texture-noratlas</texture-path>
+
+        <animation>
+        <type>select</type>
+        <object-name>Pilote</object-name>
+        <condition>
+            <not>
+            <equals>
+                <property>sim/current-view/view-number</property>
+                <value>0</value>
+            </equals>
+            </not>
+        </condition>
+       </animation>
+
+</PropertyList>
