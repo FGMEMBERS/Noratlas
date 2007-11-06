@@ -141,7 +141,7 @@ Noratlas by Gérard  ROBIN
                         <file>Aircraft/Noratlas/System/noratlas.nas</file>
                 </switch>
 		<terrain>
-			<file>Aircraft/F-8E-Crusader/System/terrain.nas</file>
+			<file>Aircraft/Noratlas/System/terrain.nas</file>
 		</terrain>
     </nasal>
 
