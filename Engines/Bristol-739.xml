@@ -12,7 +12,7 @@
     <displacement unit="IN3"> 1868.00 </displacement>
     <maxhp>        2040.00 </maxhp>
     <cycles>         2.0 </cycles>
-    <idlerpm>      1000.0 </idlerpm>
+    <idlerpm>      700.0 </idlerpm>
     <maxthrottle>    1.0 </maxthrottle>
     <minthrottle>    0.2</minthrottle>
     <takeoffboost>18</takeoffboost>  <!--not real,will be deleted or updated-->
