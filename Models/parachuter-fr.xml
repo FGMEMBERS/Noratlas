@@ -5,7 +5,7 @@
 
 
 <PropertyList>
- <path>../../../Models/Geometry/parachuter.ac</path>
+ <path>parachuter.ac</path>
  <offsets>
    <pitch-deg>90</pitch-deg>
  </offsets>

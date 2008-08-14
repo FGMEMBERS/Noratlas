@@ -107,6 +107,9 @@ Noratlas by Gérard  ROBIN
                 <cutoff-cmd>true</cutoff-cmd>
                  <master-bat>false</master-bat>
             </engine>
+	    <engine n="4">
+                <throttle type="double">0</throttle>
+            </engine>
         </engines>
         <switches>
             <landing-light>true</landing-light>
@@ -141,7 +144,7 @@ Noratlas by Gérard  ROBIN
                         <file>Aircraft/Noratlas/System/noratlas.nas</file>
                 </switch>
 		<terrain>
-			<file>Aircraft/Noratlas/System/terrain.nas</file>
+			<file>Aircraft/F-8E-Crusader/System/terrain.nas</file>
 		</terrain>
     </nasal>
 

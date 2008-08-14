@@ -1133,9 +1133,9 @@ Copyright License:  GPL
 			<x-min>3</x-min>
 			<y-min>3</y-min>
 			<z-min>3</z-min>
-			<x-factor>3</x-factor>
-			<y-factor>3</y-factor>
-			<z-factor>3</z-factor>
+			<x-factor>9</x-factor>
+			<y-factor>9</y-factor>
+			<z-factor>9</z-factor>
 	</animation>
 
 	<animation>
@@ -1195,9 +1195,9 @@ Copyright License:  GPL
 			<x-min>3</x-min>
 			<y-min>3</y-min>
 			<z-min>3</z-min>
-			<x-factor>3</x-factor>
-			<y-factor>3</y-factor>
-			<z-factor>3</z-factor>
+			<x-factor>9</x-factor>
+			<y-factor>9</y-factor>
+			<z-factor>9</z-factor>
 	</animation>
 
 	<animation>

@@ -322,21 +322,10 @@ Performance
  </propulsion>
 
  <flight_control name="FCS: Nord 2501">
-    <property>/engines/engine[0]/thruster/rpm</property>
-    <property>/engines/engine[1]/thruster/rpm</property>
-    <property>fcs/aileron-pos-norm</property>
+
     <property>fcs/ar-latd-porte-cmd-norm</property>
     <property>fcs/ar-latg-porte-cmd-norm</property>
     <property>fcs/ar-porte-cmd-norm</property>
-    <property>/controls/engines/engine[4]/throttle</property>
-    <property>/sim/model/controls/supercharger</property>
-    <property>/instrumentation/lights/blinker-kinemat-in</property>
-    <property>/instrumentation/lights/blinker-kinemat-out</property>
-    <property>/instrumentation/lights/beacon-on</property>
-    <property>fcs/cutoff-switch</property>
-    <property>/consumables/fuel/total-fuel-gals</property>
-    <property>gear/gear-cp-pos-norm</property>
-    <property>gear/gear-cp-cmd-norm</property>
 
   <channel name="Pitch">
 
@@ -748,19 +737,13 @@ Performance
             <output>fcs/ar-latg-porte-pos-norm</output>
             </kinematic>
 
-            <switch name="Parachuter Filter">
+            <switch name="Parachuter Cmd">
                 <default value="0"/>
                 <test  logic="AND" value="1">
                     fcs/ar-latg-porte-pos-norm == 1
                    /controls/jump-signal == 1
                 </test>
             </switch>
-
-            <pure_gain name="Parachuter Cmd">
-                <input>fcs/parachuter-filter</input>
-                <gain>1</gain>
-                <output>/controls/jump-signal</output>
-            </pure_gain>
 
             <kinematic name="Ar Lat DPorte">
             <input>fcs/ar-latd-porte-cmd-norm</input>
@@ -959,7 +942,7 @@ Performance
             <default value="0"/>
             <test logic="AND" value="1">
                 /surface-positions/gear-pos-norm  == 1
-                /controls/lighting/landing-lights == 1
+
                 /systems/electrical/outputs/landing-light  gt 24
             </test>
         </switch>

@@ -9,7 +9,7 @@
             <name>parachutist-fr</name>
             <model>Aircraft/Noratlas/Models/parachuter-fr.xml</model>
 
-            <trigger>controls/jump-signal</trigger>
+            <trigger>/fdm/jsbsim/fcs/parachuter-cmd</trigger>
             <speed>0</speed>
             <repeat>true</repeat>
             <delay>1</delay>

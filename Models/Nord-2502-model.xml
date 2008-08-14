@@ -287,9 +287,9 @@ Copyright License:  GPL
 		<x-min>1</x-min>
 		<y-min>1</y-min>
 		<z-min>1</z-min>
-		<x-factor>1.7</x-factor>
-		<y-factor>1.7</y-factor>
-		<z-factor>1.7</z-factor>
+		<x-factor>4.7</x-factor>
+		<y-factor>4.7</y-factor>
+		<z-factor>4.7</z-factor>
 	</animation>
 
 
@@ -331,9 +331,9 @@ Copyright License:  GPL
 		<x-min>1</x-min>
 		<y-min>1</y-min>
 		<z-min>1</z-min>
-		<x-factor>1.7</x-factor>
-		<y-factor>1.7</y-factor>
-		<z-factor>1.7</z-factor>
+		<x-factor>4.7</x-factor>
+		<y-factor>4.7</y-factor>
+		<z-factor>4.7</z-factor>
 	</animation>
 
 
