@@ -10,20 +10,16 @@
     <minmp unit="INHG">          6.0 </minmp>
     <maxmp unit="INHG">         40.0 </maxmp>
     <displacement unit="IN3"> 1868.00 </displacement>
-    <bsfc>0.315</bsfc>
+    <bsfc>0.307</bsfc>
     <maxhp>        2040.00 </maxhp>
     <cycles>         2.0 </cycles>
     <idlerpm>      700.0 </idlerpm>
     <maxthrottle>    1.0 </maxthrottle>
-    <minthrottle>    0.2</minthrottle>
-  <numboostspeeds>   2 </numboostspeeds>
-  <boostoverride>    0 </boostoverride>
-  <ratedboost1> 4 </ratedboost1>
-  <ratedpower1> 950 </ratedpower1>
-  <ratedrpm1> 2550 </ratedrpm1>
-  <ratedaltitude1> 6000 </ratedaltitude1>
-  <ratedboost2> 9 </ratedboost2>
-  <ratedpower2> 740 </ratedpower2>
-  <ratedrpm2> 2000 </ratedrpm2>
-  <ratedaltitude2> 24000 </ratedaltitude2>
+    <minthrottle>    0.05</minthrottle>
+    <numboostspeeds>   1 </numboostspeeds>
+    <boostoverride>    0 </boostoverride>
+    <ratedboost1> 5 </ratedboost1>
+    <ratedpower1> 2040 </ratedpower1>
+    <ratedrpm1> 2800 </ratedrpm1>
+    <ratedaltitude1> 20000 </ratedaltitude1>
   </piston_engine>
