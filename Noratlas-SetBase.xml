@@ -12,7 +12,7 @@ Noratlas by Gérard  ROBIN
 
     <systems>
         <autopilot>
-                <path>Aircraft/Noratlas/System/autopilot.xml</path>
+                <path>Aircraft/Noratlas/Systems/autopilot.xml</path>
         </autopilot>
     </systems>
 
@@ -138,13 +138,13 @@ Noratlas by Gérard  ROBIN
 
     <nasal>
                 <electrical>
-                        <file>Aircraft/Noratlas/System/electrical.nas</file>
+                        <file>Aircraft/Noratlas/Systems/electrical.nas</file>
                 </electrical>
                 <switch>
-                        <file>Aircraft/Noratlas/System/noratlas.nas</file>
+                        <file>Aircraft/Noratlas/Systems/noratlas.nas</file>
                 </switch>
 		<terrain>
-			<file>Aircraft/F-8E-Crusader/System/terrain.nas</file>
+			<file>Aircraft/Noratlas/Systems/terrain.nas</file>
 		</terrain>
     </nasal>
 
