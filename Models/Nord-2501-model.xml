@@ -271,12 +271,12 @@ Copyright License:  GPL
 		<object-name>GFeu-Nav</object-name>
 		<property>sim/time/sun-angle-rad</property>
 		<offset>1</offset>
-		<x-min>1</x-min>
-		<y-min>1</y-min>
-		<z-min>1</z-min>
-		<x-factor>4.7</x-factor>
-		<y-factor>4.7</y-factor>
-		<z-factor>4.7</z-factor>
+		<x-min>2</x-min>
+		<y-min>2</y-min>
+		<z-min>2</z-min>
+		<x-factor>1.7</x-factor>
+		<y-factor>1.7</y-factor>
+		<z-factor>1.7</z-factor>
 	</animation>
 
 
@@ -303,12 +303,12 @@ Copyright License:  GPL
 		<object-name>DFeu-Nav</object-name>
 		<property>sim/time/sun-angle-rad</property>
 		<offset>1</offset>
-		<x-min>1</x-min>
-		<y-min>1</y-min>
-		<z-min>1</z-min>
-		<x-factor>4.7</x-factor>
-		<y-factor>4.7</y-factor>
-		<z-factor>4.7</z-factor>
+		<x-min>2</x-min>
+		<y-min>2</y-min>
+		<z-min>2</z-min>
+		<x-factor>1.7</x-factor>
+		<y-factor>1.7</y-factor>
+		<z-factor>1.7</z-factor>
 	</animation>
 
 

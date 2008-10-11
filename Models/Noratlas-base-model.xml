@@ -109,7 +109,7 @@ Copyright License:  GPL
             <type>rotate</type>
             <object-name>GTrain-EXPorte</object-name>
             <object-name>GTrain-EXPorte-Doublage</object-name>
-            <property>surface-positions/gear-pos-norm</property>
+            <property>sim/multiplay/generic/float[0]</property>
             <interpolation>
                     <entry>
                             <ind>0.0</ind>
@@ -142,7 +142,7 @@ Copyright License:  GPL
             <type>rotate</type>
             <object-name>GTrain-INPorte</object-name>
             <object-name>GTrain-INPorte-Doublage</object-name>
-            <property>surface-positions/gear-pos-norm</property>
+            <property>sim/multiplay/generic/float[0]</property>
             <interpolation>
                     <entry>
                             <ind>0.0</ind>
@@ -174,7 +174,7 @@ Copyright License:  GPL
             <type>rotate</type>
             <object-name>GTrain-AVPorte</object-name>
             <object-name>GTrain-AVPorte-Doublage</object-name>
-            <property>surface-positions/gear-pos-norm</property>
+            <property>sim/multiplay/generic/float[0]</property>
             <interpolation>
                     <entry>
                             <ind>0.0</ind>
@@ -210,7 +210,7 @@ Copyright License:  GPL
                 <type>rotate</type>
                 <object-name>GTrain</object-name>
                  <object-name>GTrain-Frein</object-name>
-                <property>surface-positions/gear-pos-norm</property>
+                <property>sim/multiplay/generic/float[0]</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
@@ -244,7 +244,7 @@ Copyright License:  GPL
         <animation>
                 <type>rotate</type>
                 <object-name>GTrain-Roue</object-name>
-                <property>surface-positions/gear-pos-norm</property>
+                <property>sim/multiplay/generic/float[0]</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
@@ -278,7 +278,7 @@ Copyright License:  GPL
         <animation>
                 <type>rotate</type>
                 <object-name>GTrain-Verin</object-name>
-                <property>surface-positions/gear-pos-norm</property>
+                <property>sim/multiplay/generic/float[0]</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
@@ -311,7 +311,7 @@ Copyright License:  GPL
         <animation>
                 <type>rotate</type>
                 <object-name>GTrain-Verin</object-name>
-                <property>surface-positions/gear-pos-norm</property>
+                <property>sim/multiplay/generic/float[0]</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
@@ -364,7 +364,7 @@ Copyright License:  GPL
             <type>rotate</type>
             <object-name>DTrain-EXPorte</object-name>
             <object-name>DTrain-EXPorte-Doublage</object-name>
-            <property>surface-positions/gear-pos-norm</property>
+            <property>sim/multiplay/generic/float[0]</property>
             <interpolation>
                     <entry>
                             <ind>0.0</ind>
@@ -397,7 +397,7 @@ Copyright License:  GPL
             <type>rotate</type>
             <object-name>DTrain-INPorte</object-name>
             <object-name>DTrain-INPorte-Doublage</object-name>
-            <property>surface-positions/gear-pos-norm</property>
+            <property>sim/multiplay/generic/float[0]</property>
             <interpolation>
                     <entry>
                             <ind>0.0</ind>
@@ -430,7 +430,7 @@ Copyright License:  GPL
             <type>rotate</type>
             <object-name>DTrain-AVPorte</object-name>
             <object-name>DTrain-AVPorte-Doublage</object-name>
-            <property>surface-positions/gear-pos-norm</property>
+            <property>sim/multiplay/generic/float[0]</property>
             <interpolation>
                     <entry>
                             <ind>0.0</ind>
@@ -465,7 +465,7 @@ Copyright License:  GPL
                 <type>rotate</type>
                 <object-name>DTrain</object-name>
                 <object-name>DTrain-Frein</object-name>
-                <property>surface-positions/gear-pos-norm</property>
+                <property>sim/multiplay/generic/float[0]</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
@@ -499,7 +499,7 @@ Copyright License:  GPL
         <animation>
                 <type>rotate</type>
                 <object-name>DTrain-Roue</object-name>
-                <property>surface-positions/gear-pos-norm</property>
+                <property>sim/multiplay/generic/float[0]</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
@@ -533,7 +533,7 @@ Copyright License:  GPL
         <animation>
                 <type>rotate</type>
                 <object-name>DTrain-Verin</object-name>
-                <property>surface-positions/gear-pos-norm</property>
+                <property>sim/multiplay/generic/float[0]</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
@@ -566,7 +566,7 @@ Copyright License:  GPL
         <animation>
                 <type>rotate</type>
                 <object-name>DTrain-Verin</object-name>
-                <property>surface-positions/gear-pos-norm</property>
+                <property>sim/multiplay/generic/float[0]</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
@@ -618,7 +618,7 @@ Copyright License:  GPL
                 <type>rotate</type>
                 <object-name>AVTrain-DPorte</object-name>
                 <object-name>AVTrain-DPorte-Doublage</object-name>
-                <property>surface-positions/gear-pos-norm</property>
+                <property>sim/multiplay/generic/float[0]</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
@@ -651,7 +651,7 @@ Copyright License:  GPL
                 <type>rotate</type>
                 <object-name>AVTrain-GPorte</object-name>
                 <object-name>AVTrain-GPorte-Doublage</object-name>
-                <property>surface-positions/gear-pos-norm</property>
+                <property>sim/multiplay/generic/float[0]</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
@@ -684,7 +684,7 @@ Copyright License:  GPL
                 <type>rotate</type>
                 <object-name>AVTrain-AVPorte</object-name>
                 <object-name>AVTrain-AVPorte-Doublage</object-name>
-                <property>surface-positions/gear-pos-norm</property>
+                <property>sim/multiplay/generic/float[0]</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
@@ -719,7 +719,7 @@ Copyright License:  GPL
         <animation>
                 <type>rotate</type>
                 <object-name>AVTrain</object-name>
-                <property>surface-positions/gear-pos-norm</property>
+                <property>sim/multiplay/generic/float[0]</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
@@ -753,7 +753,7 @@ Copyright License:  GPL
         <animation>
                 <type>rotate</type>
                 <object-name>AVTrain-Roue</object-name>
-                <property>surface-positions/gear-pos-norm</property>
+                <property>sim/multiplay/generic/float[0]</property>
                 <interpolation>
                         <entry>
                                 <ind>0.0</ind>
@@ -1066,7 +1066,8 @@ Copyright License:  GPL
                 <type>rotate</type>
                 <object-name>AVPorte-Cabine</object-name>
                 <object-name>AVPorte-Cabine-Doublage</object-name>
-                <property>fdm/jsbsim/fcs/av-latg-porte-pos-norm</property>
+               <!-- <property>fdm/jsbsim/fcs/av-latg-porte-pos-norm</property>-->
+                <property>sim/multiplay/generic/float[2]</property>
                 <factor>95</factor>
                 <center>
                         <x-m>0</x-m>
@@ -1130,12 +1131,12 @@ Copyright License:  GPL
 		<object-name>HFeu-Actif</object-name>
 		<property>sim/time/sun-angle-rad</property>
 		<offset>1</offset>
-			<x-min>3</x-min>
-			<y-min>3</y-min>
-			<z-min>3</z-min>
-			<x-factor>9</x-factor>
-			<y-factor>9</y-factor>
-			<z-factor>9</z-factor>
+			<x-min>6</x-min>
+			<y-min>6</y-min>
+			<z-min>6</z-min>
+			<x-factor>6</x-factor>
+			<y-factor>6</y-factor>
+			<z-factor>6</z-factor>
 	</animation>
 
 	<animation>
@@ -1192,12 +1193,12 @@ Copyright License:  GPL
 		<object-name>BFeu-Actif</object-name>
 		<property>sim/time/sun-angle-rad</property>
 		<offset>1</offset>
-			<x-min>3</x-min>
-			<y-min>3</y-min>
-			<z-min>3</z-min>
-			<x-factor>9</x-factor>
-			<y-factor>9</y-factor>
-			<z-factor>9</z-factor>
+			<x-min>6</x-min>
+			<y-min>6</y-min>
+			<z-min>6</z-min>
+			<x-factor>6</x-factor>
+			<y-factor>6</y-factor>
+			<z-factor>6</z-factor>
 	</animation>
 
 	<animation>

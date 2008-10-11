@@ -59,7 +59,7 @@ Noratlas by Gérard  ROBIN
         <generic>
                 <float n="0" alias="/surface-positions/gear-pos-norm"/>
                 <float n="1" alias="/gear/gear[0]/steering-norm"/>
-                <float n="2" alias="/surface-positions/canopy-pos-norm"/>
+                <float n="2" alias="/fdm/jsbsim/fcs/av-latg-porte-pos-norm"/>
                 <float n="3" alias="/engines/engine[0]/thruster/rpm"/>
                 <float n="4" alias="/engines/engine[1]/thruster/rpm"/>
                 <float n="5" alias="/fdm/jsbsim/fcs/propeller0-rotation"/>
@@ -67,10 +67,10 @@ Noratlas by Gérard  ROBIN
                 <float n="7" alias="/surface-positions/cowl-flap-pos-norm"/>
                 <float n="8" alias="/fdm/jsbsim/fcs/landing-light"/>
                 <float n="9" alias="/fdm/jsbsim/fcs/ar-latd-porte-pos-norm"/>
-                <float n="10" alias="/fdm/jsbsim/fcs/ar-d-porte-pos-norm"/>
+                <!--<float n="10" alias="/fdm/jsbsim/fcs/ar-d-porte-pos-norm"/>
                 <float n="11" alias="/fdm/jsbsim/fcs/ar-g-porte-pos-norm"/>
                 <float n="12" alias="/fdm/jsbsim/fcs/av-latg-porte-pos-norm"/>
-                <float n="13" alias="/fdm/jsbsim/fcs/rampe-pos-norm"/>
+                <float n="13" alias="/fdm/jsbsim/fcs/rampe-pos-norm"/>-->
                 <string n="0"></string>
         </generic>
     </multiplay>
