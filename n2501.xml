@@ -1087,7 +1087,7 @@ Performance
        <product>
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
-           <property>fcs/elevator-pos-rad</property>
+           <abs> <property>fcs/elevator-pos-rad</property></abs>
            <value>0.2</value>
        </product>
     </function>
