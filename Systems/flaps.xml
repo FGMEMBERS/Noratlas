@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+
+<system name="">
+    
+    <property>/sim/flaps/current-setting</property>
+    <property>/sim/flaps/setting</property> 
+    <property>/sim/flaps/setting[1]</property>
+    <property>/sim/flaps/setting[2]</property>
+    <property>/sim/flaps/setting[3]</property>
+    <property>/sim/flaps/setting[4]</property>
+    
+    <channel name="Flaps">
+        
+        <scheduled_gain name="fcs/flap-setting">
+            <input>/sim/flaps/current-setting</input>
+            <table>
+                <independentVar>/sim/flaps/current-setting</independentVar>
+                <tableData>
+                    0  0.00
+                    1  0.25
+                    2  0.25
+                    3  0.25
+                    4  0.25
+                </tableData>
+            </table>
+        </scheduled_gain>
+        
+        <kinematic name="Flaps Control">
+            <input>fcs/flap-setting</input>
+            <traverse>
+                <setting>
+                    <position>  0 </position>
+                    <time>      0 </time>
+                </setting>
+                <setting>
+                    <position> 10 </position>
+                    <time>      6 </time>
+                </setting>
+                <setting>
+                    <position> 20 </position>
+                    <time>      6 </time>
+                </setting>
+                <setting>
+                    <position> 30 </position>
+                    <time>      6 </time>
+                </setting>
+                <setting>
+                    <position> 40 </position>
+                    <time>      6 </time>
+                </setting>
+            </traverse>
+            <output>fcs/flap-pos-deg</output>
+        </kinematic>
+        
+        <aerosurface_scale name="Flap Position Normalizer">
+            <input>fcs/flaps-control</input>
+            <domain>
+                <min>0</min>
+                <max>40</max>
+            </domain>
+            <range>
+                <min>0</min>
+                <max>1</max>
+            </range>
+            <output>fcs/flap-pos-norm</output>
+        </aerosurface_scale>
+        
+  </channel>
+
+    
+</system>

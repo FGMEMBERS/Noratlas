@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+
+
+<system name="">
+    <channel name="ThrottleN2502">
+        
+        <scheduled_gain name="Throttle0 Cmd Norm">
+            <input>/controls/engines/engine[0]/condition</input>
+            <table>
+                <independentVar>/controls/engines/engine[4]/throttle</independentVar>
+                <tableData>
+                    0.0	0.0
+                    0.8	1
+                    1           1
+                </tableData>
+            </table>
+        </scheduled_gain>
+        
+        <scheduled_gain name="Throttle2 Cmd Norm">
+            <input>/controls/engines/engine[2]/condition</input>
+            <table>
+                <independentVar>/controls/engines/engine[4]/throttle</independentVar>
+                <tableData>
+                    0.0	0.0
+                    0.8	0.0
+                    1           1
+                </tableData>
+            </table>
+            <output>/controls/engines/engine[2]/throttle</output>
+        </scheduled_gain>
+        
+        <summer name="Throttle0">
+            <input>fcs/throttle0-cmd-norm</input>
+            <clipto>
+                <min>0.2</min>
+                <max>1.0</max>
+            </clipto>
+            <output>/controls/engines/engine[0]/throttle</output>
+        </summer>
+        
+        <scheduled_gain name="Throttle1 Cmd Norm">
+            <input>/controls/engines/engine[1]/condition</input>
+            <table>
+                <independentVar>/controls/engines/engine[4]/throttle</independentVar>
+                <tableData>
+                    0.0	0.0
+                    0.8	1
+                    1           1
+                </tableData>
+            </table>
+        </scheduled_gain>
+        
+        <scheduled_gain name="Throttle3 Cmd Norm">
+            <input>/controls/engines/engine[3]/condition</input>
+            <table>
+                <independentVar>/controls/engines/engine[4]/throttle</independentVar>
+                <tableData>
+                    0.0	0.0
+                    0.8	0.0
+                    1           1
+                </tableData>
+            </table>
+            <output>/controls/engines/engine[3]/throttle</output>
+        </scheduled_gain>
+        
+        <summer name="Throttle1">
+            <input>fcs/throttle1-cmd-norm</input>
+            <clipto>
+                <min>0.2</min>
+                <max>1.0</max>
+            </clipto>
+            <output>/controls/engines/engine[1]/throttle</output>
+        </summer>
+        
+        
+        
+        <switch name="Supercharger Engage">
+            <default value="0"/>
+            <test  logic="OR" value="1">
+                /controls/engines/engine[0]/throttle  gt 0.98
+                /controls/engines/engine[1]/throttle  gt 0.98
+            </test>
+        </switch>
+        
+        <kinematic name="Supercharger Throttle Control">
+            <input>fcs/supercharger-engage</input>
+            <traverse>
+                <setting>
+                    <position>0 </position>
+                    <time>     0 </time>
+                </setting>
+                <setting>
+                    <position> 1</position>
+                    <time>     300 </time>
+                </setting>
+            </traverse>
+        </kinematic>
+        
+        <switch name="Supercharger Throttle0">
+            <default value="/controls/engines/engine[0]throttle"/>
+            <test  logic="AND" value="0.98">
+                fcs/supercharger-throttle-control == 1
+            </test>
+            <output>/controls/engines/engine[0]throttle</output>
+        </switch>
+        
+        <switch name="Supercharger Throttle1">
+            <default value="/controls/engines/engine[1]throttle"/>
+            <test  logic="AND" value="0.98">
+                fcs/supercharger-throttle-control == 1
+            </test>
+            <output>/controls/engines/engine[1]throttle</output>
+        </switch>
+        
+        <pure_gain name="Throttle Master Cmd">
+            <input>/controls/engines/engine[4]/throttle</input>
+            <gain>1</gain>
+        </pure_gain>
+    </channel>
+
+</system>

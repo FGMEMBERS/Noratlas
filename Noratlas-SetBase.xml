@@ -48,13 +48,7 @@ Noratlas by Gérard  ROBIN
         <enable3d>true</enable3d>
     </hud>
 
-    <flaps>
-        <setting>0.00</setting>
-        <setting>0.25</setting>
-        <setting>0.50</setting>
-        <setting>0.75</setting>
-        <setting>1</setting>
-    </flaps>
+    
     <multiplay>
         <generic>
                 <float n="0" alias="/surface-positions/gear-pos-norm"/>
