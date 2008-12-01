@@ -321,7 +321,7 @@ Performance
     <system file="pitch"/>
     <system file="roll"/>
     <system file="yaw"/>
-    <system file="flaps"/>
+   
     <system file="landing-gear"/>
     <system file="speedbrake"/>
     <system file="throttle"/>
@@ -330,6 +330,8 @@ Performance
     <system file="external"/>
     <system file="electric-master"/>
     <system file="outdoor-lighting"/>
+    <system file="mixture-control"/>
+    <system file="flaps"/>
 
  <flight_control name="FCS: Nord 2501">
  </flight_control>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+
+<system name="">
+    
+    <property value="1">propulsion/ctl_mixture</property>
+    
+    <channel name="Mixture Control">
+        
+        <scheduled_gain name="propulsion/mixture-value">
+            <input>propulsion/ctl_mixture</input>
+            <table>
+                <independentVar>position/h-sl-ft</independentVar>
+                <tableData>
+                    0                   1
+                    5000              0.94
+                    10000           0.78
+                    15000           0.64
+                    20000           0.52
+                    25000           0.41
+                    30000           0.34
+                    35000           0.28
+                    40000           0.21
+                </tableData>
+            </table>
+            <output>/controls/engines/engine[0]/mixture</output>
+        </scheduled_gain>
+        
+        <scheduled_gain name="propulsion/mixture-value">
+            <input>propulsion/ctl_mixture</input>
+            <table>
+                <independentVar>position/h-sl-ft</independentVar>
+                <tableData>
+                    0                   1
+                    5000              0.94
+                    10000           0.78
+                    15000           0.64
+                    20000           0.52
+                    25000           0.41
+                    30000           0.34
+                    35000           0.28
+                    40000           0.21
+                </tableData>
+            </table>
+            <output>/controls/engines/engine[1]/mixture</output>
+        </scheduled_gain>
+        
+    </channel>
+    
+</system>

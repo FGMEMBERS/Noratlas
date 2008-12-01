@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
 
 
-<system name="">
+<system name="Flaps_control">
     
-    <property>/sim/flaps/current-setting</property>
-    <property>/sim/flaps/setting</property> 
+    <property>/sim/flaps/setting</property>
     <property>/sim/flaps/setting[1]</property>
     <property>/sim/flaps/setting[2]</property>
     <property>/sim/flaps/setting[3]</property>

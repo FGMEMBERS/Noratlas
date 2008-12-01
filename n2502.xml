@@ -409,6 +409,7 @@ Performance
         <system file="external"/>
         <system file="electric-master"/>
         <system file="outdoor-lighting"/>
+        <system file="mixture-control"/>
 
  <flight_control name="FCS: Nord 2502">
  </flight_control>

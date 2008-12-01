@@ -19,6 +19,7 @@ Noratlas by Gérard  ROBIN
     <sound>
         <path>Aircraft/Noratlas/Sounds/sound.xml</path>
     </sound>
+    <flaps><current-setting>0</current-setting></flaps>
 
 
 
