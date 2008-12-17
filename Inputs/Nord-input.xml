@@ -13,7 +13,15 @@ Copyright License:  GPL
                             <binding>
                                 <command>property-toggle</command>
                                 <property>/fdm/jsbsim/fcs/cutoff-switch</property>
-                        </binding>
+                            </binding>
+                            <binding>
+                                <command>property-toggle</command>
+                                <property>/controls/engines/engine[2]/cutoff</property>
+                            </binding>
+                            <binding>
+                                <command>property-toggle</command>
+                                <property>/controls/engines/engine[3]/cutoff</property>
+                            </binding>
         </key>
 
         <key n="100">

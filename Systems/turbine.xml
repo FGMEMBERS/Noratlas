@@ -45,23 +45,18 @@
             <output>/controls/engines/engine[3]/fuel-pump</output>
         </pure_gain>
         
-        <switch name="Cutoff2 Cmd">
+        <switch name="Cutoff Cmd">
             <default value="1"/>
             <test  logic="AND" value="0">
                 fcs/cutoff-switch-delay == 1
                 fcs/fuel-pump2-cmd == 1
-            </test>
-            <output>/controls/engines/engine[2]/cutoff-cmd</output>
-        </switch>
-        
-        <switch name="Cutoff3 Cmd">
-            <default value="1"/>
-            <test  logic="AND" value="0">
-                fcs/cutoff-switch-delay == 1
                 fcs/fuel-pump3-cmd == 1
             </test>
-            <output>/controls/engines/engine[3]/cutoff-cmd</output>
+            <output>propulsion/cutoff_cmd</output>
         </switch>
+       
+        
+        
         
     </channel>
 

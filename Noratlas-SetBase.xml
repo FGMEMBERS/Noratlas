@@ -112,12 +112,10 @@ Noratlas by Gérard  ROBIN
             </engine>
             <engine n="2">
                 <fuel-pump>false</fuel-pump>
-                <cutoff-cmd>true</cutoff-cmd>
                 <master-bat>false</master-bat>
             </engine>
             <engine n="3">
                 <fuel-pump>false</fuel-pump>
-                <cutoff-cmd>true</cutoff-cmd>
                  <master-bat>false</master-bat>
             </engine>
 	    <engine n="4">
@@ -151,14 +149,11 @@ Noratlas by Gérard  ROBIN
 
     <nasal>
                 <crash>
-		  <file>Aircraft/P-38-Lightning/Systems/crash.nas</file>
+		  <file>Aircraft/Noratlas/Systems/crash.nas</file>
 	        </crash>
                 <electrical>
                         <file>Aircraft/Noratlas/Systems/electrical.nas</file>
                 </electrical>
-                <switch>
-                        <file>Aircraft/Noratlas/Systems/noratlas.nas</file>
-                </switch>
 		<terrain>
 			<file>Aircraft/Noratlas/Systems/terrain.nas</file>
 		</terrain>
