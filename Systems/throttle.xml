@@ -79,7 +79,7 @@
                 <min>0.2</min>
                 <max>1.0</max>
             </clipto>
-            <output>fcs/throttle-cmd-norm[0]</output>
+            <output>fcs/throttle-pos-norm[0]</output>
         </summer>
         
         <summer name="Throttle1 Range">
@@ -89,7 +89,7 @@
                 <min>0.2</min>
                 <max>1.0</max>
             </clipto>
-            <output>fcs/throttle-cmd-norm[1]</output>
+            <output>fcs/throttle-pos-norm[1]</output>
         </summer>
     </channel>
     
