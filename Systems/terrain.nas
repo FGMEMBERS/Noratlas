@@ -1,3 +1,6 @@
+# Do terrain modelling ourselves.
+setprop("sim/fdm/surface/override-level", 1);
+
 terrain_under = func {
 
 var lat = getprop("/position/latitude-deg");
