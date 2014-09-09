@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+
+
+<system name="">
+    <channel name="Throttle">
+        
+        <switch name="Supercharger Engage">
+            <default value="0"/>
+            <test  logic="OR" value="1">
+                /controls/engines/engine[0]/throttle  gt 0.98
+                /controls/engines/engine[1]/throttle  gt 0.98
+            </test>
+        </switch>
+        
+        <kinematic name="Supercharger Throttle Control">
+            <input>fcs/supercharger-engage</input>
+            <traverse>
+                <setting>
+                    <position>0 </position>
+                    <time>     0 </time>
+                </setting>
+                <setting>
+                    <position> 1</position>
+                    <time>     300 </time>
+                </setting>
+            </traverse>
+        </kinematic>
+        
+        <switch name="Supercharger Throttle0">
+            <default value="/controls/engines/engine[0]throttle"/>
+            <test  logic="AND" value="0.98">
+                fcs/supercharger-throttle-control == 1
+            </test>
+            <output>/controls/engines/engine[0]throttle</output>
+        </switch>
+        
+        <switch name="Supercharger Throttle1">
+            <default value="/controls/engines/engine[1]throttle"/>
+            <test  logic="AND" value="0.98">
+                fcs/supercharger-throttle-control == 1
+            </test>
+            <output>/controls/engines/engine[1]throttle</output>
+        </switch>
+        
+        <pure_gain name="Throttle Master Cmd">
+            <input>/controls/engines/engine[0]/throttle</input>
+            <gain>1</gain>
+        </pure_gain>
+    </channel>
+    
+    <channel name="Differential Throttle Cmd">
+        
+        <switch name="fcs/differential-throttle-pos-norm">
+            <default value="0"/>
+            <test  logic="AND" value="/controls/flight/rudder">
+                /gear/gear[0]/wow == 1
+                gear/gear-pos-norm == 1
+                velocities/vc-kts lt 30
+                position/h-agl-ft lt 7
+                /controls/engines/engine[0]/throttle lt 0.40
+                /controls/engines/engine[1]/throttle lt 0.40
+            </test>
+        </switch>
+        
+        <pure_gain name="Differential Throttle Left Pos Norm">
+            <input>fcs/differential-throttle-pos-norm</input>
+            <gain>1</gain>
+        </pure_gain>
+        
+        <pure_gain name="Differential Throttle Right Pos Norm">
+            <input>fcs/differential-throttle-pos-norm</input>
+            <gain>-1</gain>
+        </pure_gain>
+        
+        <summer name="Throttle0 Range">
+            <input>/controls/engines/engine[0]/throttle</input>
+            <input>fcs/differential-throttle-left-pos-norm</input>
+            <clipto>
+                <min>0.2</min>
+                <max>1.0</max>
+            </clipto>
+            <output>fcs/throttle-pos-norm[0]</output>
+        </summer>
+        
+        <summer name="Throttle1 Range">
+            <input>/controls/engines/engine[1]/throttle</input>
+            <input>fcs/differential-throttle-right-pos-norm</input>
+            <clipto>
+                <min>0.2</min>
+                <max>1.0</max>
+            </clipto>
+            <output>fcs/throttle-pos-norm[1]</output>
+        </summer>
+    </channel>
+    
+
+</system>

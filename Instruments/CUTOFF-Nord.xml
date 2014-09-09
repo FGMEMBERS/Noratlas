@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+<PropertyList>
+
+ <path>Models/cutoff-nord.ac</path>
+ <texture-path>Models/Textures</texture-path>
+
+ 	<!--<animation>
+		<type>noshadow</type>
+		<object-name></object-name>
+	</animation>
+
+
+	<animation include="Instrument-Light4.xml">
+		<object-name></object-name>
+	</animation>-->
+
+	<model>
+		<name>Bipolaire</name>
+		<path>Aircraft/Noratlas/Instruments/Bipolaire-Nord.xml</path>
+		<offsets>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+
+
+	<animation>
+		<type>rotate</type>
+		<object-name>Interrupteur</object-name>
+		<property>/controls/engines/engine[2]/cutoff</property>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>-30</dep>
+			</entry>
+			<entry>
+				<ind>0.99</ind>
+				<dep>-30</dep>
+			</entry>
+			<entry>
+				<ind>1</ind>
+				<dep>30</dep>
+			</entry>
+		</interpolation>
+
+		<center>
+			<x-m>0.0</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+        <animation>
+            <type>pick</type>
+            <object-name>Bipolaire</object-name>
+            <visible>true</visible>
+            <action>
+                <button>0</button>
+                <repeatable>false</repeatable>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>/fdm/jsbsim/fcs/cutoff-switch</property>
+                </binding>
+            </action>
+        </animation>
+
+</PropertyList>

@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+   <!--             Auteur :      Gerard ROBIN                       COPYRIGHT-->
+<PropertyList>
+
+
+    <model>
+            <name>DHelice</name>
+            <path>Aircraft/Noratlas/Models/Noratlas_DHelice.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+            </offsets>
+    </model>
+
+    <model>
+            <name>DCasserolle</name>
+            <path>Aircraft/Noratlas/Models/Noratlas_DCasserolle.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+            </offsets>
+    </model>
+
+    <animation>
+            <type>spin</type>
+            <object-name>DHelice</object-name>
+            <object-name>DCasserolle</object-name>
+           <property>sim/multiplay/generic/float[4]</property>
+            <factor>0.2</factor>
+            <center>
+                    <x-m>0</x-m>
+                    <y-m>0.0</y-m>
+                    <z-m>0.0</z-m>
+            </center>
+            <axis>
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+            </axis>
+    </animation>
+
+    <model>
+            <name>DPropDisk</name>
+            <path>Aircraft/Noratlas/Models/Noratlas_DPropdisk.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+            </offsets>
+    </model>
+
+    <animation>
+        <type>spin</type>
+        <object-name>DPropDisk</object-name>
+        <property>sim/multiplay/generic/float[6]</property>
+        <factor>1</factor>
+                <center>
+                        <x-m>0</x-m>
+                        <y-m>0.0</y-m>
+                        <z-m>0.0</z-m>
+                </center>
+                <axis>
+                        <x>1.0</x>
+                        <y>0.0</y>
+                        <z>0.0</z>
+                </axis>
+    </animation>
+
+     <animation>
+        <type>noshadow</type>
+        <object-name>DPropDisk</object-name>
+    </animation>
+
+    <animation>
+            <type>select</type>
+            <object-name>DHelice</object-name>
+            <object-name>DCasserolle</object-name>
+            <condition>
+                    <less-than>
+                   <property>sim/multiplay/generic/float[4]</property>
+                    <value>1000</value>
+                    </less-than>
+            </condition>
+    </animation>
+
+    <animation>
+            <type>select</type>
+            <object-name>DPropDisk</object-name>
+            <condition>
+                    <greater-than>
+                   <property>sim/multiplay/generic/float[4]</property>
+                    <value>900</value>
+                    </greater-than>
+            </condition>
+    </animation>
+
+
+</PropertyList>

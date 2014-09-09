@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+<!--                      Auteur :      Gerard ROBIN                       COPYRIGHT-->
+<PropertyList>
+
+    <path>noratlas-propdisk.ac</path>
+    <texture-path>Textures/texture-noratlas</texture-path>
+
+    <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+            <pitch-deg>0</pitch-deg>
+    </offsets>
+
+
+
+
+
+
+
+
+</PropertyList>

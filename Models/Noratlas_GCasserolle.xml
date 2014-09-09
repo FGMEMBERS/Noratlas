@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+   <!--             Auteur :      Gerard ROBIN                       COPYRIGHT-->
+<PropertyList>
+
+    <path>noratlas-casserolle.ac</path>
+    <texture-path>Textures/texture-noratlas</texture-path>
+
+
+
+
+
+    <!--<animation>
+            <type>spin</type>
+            <object-name>Casserolle</object-name>
+            <property>engines/engine[1]/thruster/rpm</property>
+            <factor>-0.2</factor>
+            <center>
+                    <x-m>0</x-m>
+                    <y-m>0.0</y-m>
+                    <z-m>0.0</z-m>
+            </center>
+            <axis>
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+            </axis>
+    </animation>-->
+
+
+
+</PropertyList>

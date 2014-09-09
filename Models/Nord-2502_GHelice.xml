@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+   <!--             Auteur :      Gerard ROBIN                       COPYRIGHT-->
+<PropertyList>
+
+    <path>nord-2502-helice.ac</path>
+    <texture-path>Textures/texture-2502</texture-path>
+
+
+    <animation>
+            <type>select</type>
+            <object-name>Helice</object-name>
+            <condition>
+                    <less-than>
+                    <property>engines/engine[1]/thruster/rpm</property>
+                    <value>900</value>
+                    </less-than>
+            </condition>
+    </animation>
+
+
+    <animation>
+            <type>spin</type>
+            <object-name>Helice</object-name>
+            <property>engines/engine[1]/thruster/rpm</property>
+            <factor>-0.2</factor>
+            <center>
+                    <x-m>0</x-m>
+                    <y-m>0.0</y-m>
+                    <z-m>0.0</z-m>
+            </center>
+            <axis>
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+            </axis>
+    </animation>
+
+    <animation>
+            <type>spin</type>
+            <object-name>Casserolle</object-name>
+            <property>engines/engine[1]/thruster/rpm</property>
+            <factor>-0.2</factor>
+            <center>
+                    <x-m>0</x-m>
+                    <y-m>0.0</y-m>
+                    <z-m>0.0</z-m>
+            </center>
+            <axis>
+                    <x>1.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+            </axis>
+    </animation>
+
+
+
+</PropertyList>

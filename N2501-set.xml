@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+*****************************************************************
+Gérard  ROBIN
+
+************************************************************************
+-->
+
+<PropertyList include="Noratlas-SetBase.xml">
+
+ <sim>
+
+    <description>Nord-2501  Noratlas</description>
+    <author>Gerard ROBIN</author>
+    <status>alpha, "GPL Copyright"</status>
+    <version>0.21 7-0406</version>
+
+    <flight-model>jsb</flight-model>
+    <aero>n2501</aero>
+    <startup>
+            <splash-texture>Aircraft/Noratlas/Nord-2501-splash.rgb</splash-texture>
+    </startup>
+
+     <model>
+        <path>Aircraft/Noratlas/Models/Nord-2501-model.xml</path>
+    </model>
+
+   <submodels>
+        <serviceable type="bool">true</serviceable>
+        <path>Aircraft/Noratlas/Models/submodels.xml</path>
+    </submodels>
+
+    <help include="Help/Nord-2501-help.xml"/>
+
+  </sim>
+
+  <consumables>
+        <fuel>
+            <tank n="0">
+                <level-gal_us archive="y">300</level-gal_us>
+            </tank>
+            <tank n="1">
+                <level-gal_us archive="y">300</level-gal_us>
+            </tank>
+        </fuel>
+    </consumables>
+
+</PropertyList>

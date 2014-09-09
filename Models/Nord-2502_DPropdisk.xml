@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+<!--                      Auteur :      Gerard ROBIN                       COPYRIGHT-->
+<PropertyList>
+
+	<path>nord-2502-propdisk.ac</path>
+	<texture-path>Textures/texture-2502</texture-path>
+
+	<offsets>
+		<x-m>0</x-m>
+		<y-m>0</y-m>
+		<z-m>0</z-m>
+		<pitch-deg>0</pitch-deg>
+	</offsets>
+
+
+	<animation>
+		<type>select</type>
+		<object-name>PropDisk</object-name>
+		<condition>
+			<greater-than>
+			<property>engines/engine[0]/thruster/rpm</property>
+			<value>800</value>
+			</greater-than>
+		</condition>
+	</animation>
+
+
+
+
+	<animation>
+		<condition>
+			<greater-than>
+				<property>engines/engine[0]/thruster/rpm</property>
+				<value>1380</value>
+			</greater-than>
+		</condition>
+		<type>spin</type>
+		<object-name>PropDisk</object-name>
+		<property>engines/engine[0]/thruster/rpm</property>
+		<factor>-0.01</factor>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.0</z-m>
+		</center>
+		<axis>
+			<x>1.0</x>
+			<y>0.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<condition>
+			<property>engines/engine[0]/running</property>
+			<less-than>
+				<property>engines/engine[0]/thruster/rpm</property>
+				<value>1380</value>
+			</less-than>
+		</condition>
+		<type>spin</type>
+		<object-name>PropDisk</object-name>
+		<property>engines/engine[0]/thruster/rpm</property>
+		<factor>-0.1</factor>
+			<center>
+				<x-m>0</x-m>
+				<y-m>0.0</y-m>
+				<z-m>0.0</z-m>
+			</center>
+			<axis>
+				<x>1.0</x>
+				<y>0.0</y>
+				<z>0.0</z>
+			</axis>
+	</animation>
+
+
+
+</PropertyList>

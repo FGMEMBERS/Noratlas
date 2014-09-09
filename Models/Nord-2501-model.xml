@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+
+<!--
+Usable with FlightGear
+Property of Gerard Robin
+Copyright License:  GPL
+-->
+
+<PropertyList >
+
+<path>nord-2501-aile.ac</path>
+<texture-path>Textures/texture-noratlas</texture-path>
+
+
+
+    <offsets>
+        <z-m>0.08</z-m>
+        <pitch-deg>-0.4</pitch-deg>
+    </offsets>
+
+    <model>
+            <name>Base</name>
+            <path>Aircraft/Noratlas/Models/N2501_Base.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+                    <pitch-deg>0</pitch-deg>
+            </offsets>
+    </model>
+
+
+
+    <model>
+            <name>DHelice</name>
+            <path>Aircraft/Noratlas/Models/Nord-2502_DHelice_mod.xml</path>
+            <offsets>
+                    <x-m>-3.01</x-m>
+                    <y-m>3.79244</y-m>
+                    <z-m>0.984818</z-m>
+                    <pitch-deg>0</pitch-deg>
+                    <roll-deg>40</roll-deg>
+            </offsets>
+    </model>
+
+
+
+    <model>
+            <name>GHelice</name>
+            <path>Aircraft/Noratlas/Models/Nord-2502_GHelice_mod.xml</path>
+            <offsets>
+                    <x-m>-3.01</x-m>
+                    <y-m>-3.79244</y-m>
+                    <z-m>0.984818</z-m>
+                    <pitch-deg>0</pitch-deg>
+                    <roll-deg>12</roll-deg>
+            </offsets>
+    </model>
+
+
+    <model>
+            <name>Pilote-et-Co</name>
+            <path>Aircraft/Noratlas/Models/Noratlas_Pilote.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+                    <pitch-deg>0</pitch-deg>
+            </offsets>
+    </model>
+
+    <model>
+            <name>Cockpit</name>
+            <path>Aircraft/Noratlas/Models/Nord-2501_Cockpit.xml</path>
+            <offsets>
+                    <x-m>0</x-m>
+                    <y-m>0</y-m>
+                    <z-m>0</z-m>
+                    <pitch-deg>0</pitch-deg>
+            </offsets>
+    </model>
+
+<!--=========================================================-->
+
+    <animation>
+            <type>translate</type>
+            <object-name>DFlapIN</object-name>
+            <property>surface-positions/flap-pos-norm</property>
+            <factor>0.5</factor>
+                <axis>
+                        <x>1.0</x>
+                        <y>0.0</y>
+                        <z>0.0</z>
+                </axis>
+        </animation>
+
+    <animation>
+                <type>rotate</type>
+                <object-name>DFlapIN</object-name>
+                <property>surface-positions/flap-pos-norm</property>
+                <factor>40</factor>
+                <axis>
+                        <x1-m>1.69773</x1-m>
+                        <y1-m>1.60378</y1-m>
+                        <z1-m>1.45643</z1-m>
+                        <x2-m>1.69773</x2-m>
+                        <y2-m>2.89284</y2-m>
+                        <z2-m>1.45643</z2-m>
+                </axis>
+        </animation>
+
+
+
+         <animation>
+            <type>translate</type>
+            <object-name>DFlapEX</object-name>
+            <property>surface-positions/flap-pos-norm</property>
+            <factor>0.5</factor>
+                <axis>
+                        <x>1.0</x>
+                        <y>0.0</y>
+                        <z>0.0</z>
+                </axis>
+        </animation>
+
+        <animation>
+        <type>rotate</type>
+        <object-name>DFlapEX</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <factor>40</factor>
+                <axis>
+                        <x1-m>1.69774</x1-m>
+                        <y1-m>4.56771</y1-m>
+                        <z1-m>1.48927</z1-m>
+                        <x2-m>1.42564</x2-m>
+                        <y2-m>9.34131</y2-m>
+                        <z2-m>1.53651</z2-m>
+                </axis>
+        </animation>
+
+       <animation>
+            <type>translate</type>
+            <object-name>GFlapIN</object-name>
+            <property>surface-positions/flap-pos-norm</property>
+            <factor>0.5</factor>
+                <axis>
+                        <x>1.0</x>
+                        <y>0.0</y>
+                        <z>0.0</z>
+                </axis>
+        </animation>
+
+        <animation>
+                <type>rotate</type>
+                <object-name>GFlapIN</object-name>
+                <property>surface-positions/flap-pos-norm</property>
+                <factor>-40</factor>
+                <axis>
+                        <x1-m>1.69773</x1-m>
+                        <y1-m>-1.60378</y1-m>
+                        <z1-m>1.45643</z1-m>
+                        <x2-m>1.69773</x2-m>
+                        <y2-m>-2.89284</y2-m>
+                        <z2-m>1.45643</z2-m>
+                </axis>
+        </animation>
+
+
+        <animation>
+                <type>translate</type>
+                <object-name>GFlapEX</object-name>
+                <property>surface-positions/flap-pos-norm</property>
+                <factor>0.5</factor>
+                <axis>
+                        <x>1.0</x>
+                        <y>0.0</y>
+                        <z>0.0</z>
+                </axis>
+        </animation>
+
+
+        <animation>
+                <type>rotate</type>
+                <object-name>GFlapEX</object-name>
+                <property>surface-positions/flap-pos-norm</property>
+                <factor>-40</factor>
+                <axis>
+                        <x1-m>1.69774</x1-m>
+                        <y1-m>-4.56771</y1-m>
+                        <z1-m>1.48927</z1-m>
+                        <x2-m>1.42564</x2-m>
+                        <y2-m>-9.34131</y2-m>
+                        <z2-m>1.53651</z2-m>
+                </axis>
+        </animation>
+
+<!--==================================================================-->
+
+    <animation>
+            <type>rotate</type>
+            <object-name>GAileron</object-name>
+            <property>surface-positions/aileron-pos-norm</property>
+            <factor>-20.0</factor>
+            <axis>
+                    <x1-m>1.66781</x1-m>
+                    <y1-m>-9.34372</y1-m>
+                    <z1-m>1.53993</z1-m>
+                    <x2-m>1.35755</x2-m>
+                    <y2-m>-16.0734</y2-m>
+                    <z2-m>1.64153</z2-m>
+            </axis>
+    </animation>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>DAileron</object-name>
+    <property>surface-positions/aileron-pos-norm</property>
+    <factor>-20.0</factor>
+            <axis>
+                    <x1-m>1.66781</x1-m>
+                    <y1-m>9.34372</y1-m>
+                    <z1-m>1.53993</z1-m>
+                    <x2-m>1.35755</x2-m>
+                    <y2-m>16.0734</y2-m>
+                    <z2-m>1.64153</z2-m>
+            </axis>
+    </animation>
+
+   <!-- =================================================================-->
+
+    <animation>
+            <type>select</type>
+            <object-name>GFeu-Lampe</object-name>
+            <condition>
+                    <not>
+                            <property>instrumentation/lights/blinker-kinemat-in</property>
+                    </not>
+            </condition>
+    </animation>
+
+    <animation>
+            <type>select</type>
+            <object-name>DFeu-Lampe</object-name>
+            <condition>
+                    <not>
+                            <property>instrumentation/lights/blinker-kinemat-in</property>
+                    </not>
+            </condition>
+    </animation>
+
+    	<animation>
+		<type>select</type>
+		<object-name>GFeu-Nav</object-name>
+		<condition>
+			<property>instrumentation/lights/blinker-kinemat-in</property>
+		</condition>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>GFeu-Nav</object-name>
+		<offset-m>16.13</offset-m>
+		<axis>
+			<x>-0.122392</x>
+			<y>-16.0359</y>
+			<z>1.68877</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>scale</type>
+		<object-name>GFeu-Nav</object-name>
+		<property>sim/time/sun-angle-rad</property>
+		<offset>1</offset>
+		<x-min>2</x-min>
+		<y-min>2</y-min>
+		<z-min>2</z-min>
+		<x-factor>1.7</x-factor>
+		<y-factor>1.7</y-factor>
+		<z-factor>1.7</z-factor>
+	</animation>
+
+
+        <animation>
+		<type>select</type>
+		<object-name>DFeu-Nav</object-name>
+		<condition>
+			<property>instrumentation/lights/blinker-kinemat-in</property>
+		</condition>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>DFeu-Nav</object-name>
+		<offset-m>16.13</offset-m>
+		<axis>
+                    <x>-0.122392</x>
+                    <y>16.0359</y>
+                    <z>1.68877</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>scale</type>
+		<object-name>DFeu-Nav</object-name>
+		<property>sim/time/sun-angle-rad</property>
+		<offset>1</offset>
+		<x-min>2</x-min>
+		<y-min>2</y-min>
+		<z-min>2</z-min>
+		<x-factor>1.7</x-factor>
+		<y-factor>1.7</y-factor>
+		<z-factor>1.7</z-factor>
+	</animation>
+
+
+
+</PropertyList>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<!--
+Usable with FlightGear
+Property of Gerard Robin
+Copyright License:  GPL
+-->
+
+<PropertyList include="Noratlas-base-model.xml">
+
+    <path>nord-2500-base.ac</path>
+    <texture-path>Textures/texture-noratlas</texture-path>
+
+
+
+
+</PropertyList>

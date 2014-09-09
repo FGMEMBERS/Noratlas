@@ -1,0 +1,439 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+<!--                   Auteur :      Gerard ROBIN                       COPYRIGHT-->
+
+<PropertyList>
+
+    <path>Models/nord-2502_c-tableau.ac</path>
+        <texture-path>Models/Textures</texture-path>
+
+
+
+      <!--====================1er  Rang Gauche=======================  -->
+      <!--=1=-->
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/Dummy-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00</x-m>
+                        <y-m>-0.222907</y-m>
+                        <z-m>0.118754</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>-0.222907</y-m>
+                        <z-m>0.118754</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <!--=2=-->
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/RPM-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00435654</x-m>
+                        <y-m>-0.132978</y-m>
+                        <z-m>0.118754</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>-0.132978</y-m>
+                        <z-m>0.118754</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <!--=3=-->
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/N1_Eng2-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00225654</x-m>
+                        <y-m>-0.0443065</y-m>
+                        <z-m>0.118754</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>-0.0443065</y-m>
+                        <z-m>0.118754</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+
+        <!--====================2er  Rang Gauche=======================  -->
+        <!--=1=-->
+        <model>
+                <name>Dummyl</name>
+                <path>Aircraft/Noratlas/Instruments/Dummy-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00</x-m>
+                        <y-m>-0.222907</y-m>
+                        <z-m>0.028374</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>-0.222907</y-m>
+                        <z-m>0.028374</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <!--=2=-->
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/CTRL_OIL_FUEL_Eng0-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00435654</x-m>
+                        <y-m>-0.132978</y-m>
+                        <z-m>0.028374</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>-0.132978</y-m>
+                        <z-m>0.028374</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <!--=3=-->
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/N1_Eng3-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00222654</x-m>
+                        <y-m>-0.0443065</y-m>
+                        <z-m>0.028374</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>-0.0443065</y-m>
+                        <z-m>0.028374</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+
+        <!--====================3er  Rang Gauche=======================  -->
+        <!--=1=-->
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/Temoin-TRAIN-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00435654</x-m>
+                        <y-m>-0.222907</y-m>
+                        <z-m>-0.0589909</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>-0.222907</y-m>
+                        <z-m>-0.0589909</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <!--=2=-->
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/CTRL_OIL_FUEL_Eng1-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00435654</x-m>
+                        <y-m>-0.132978</y-m>
+                        <z-m>-0.0589909</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>-0.132978</y-m>
+                        <z-m>-0.0589909</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <!--=3=-->
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/EPR-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00435654</x-m>
+                        <y-m>-0.0443065</y-m>
+                        <z-m>-0.0589909</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>-0.0443065</y-m>
+                        <z-m>-0.0589909</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+
+
+
+
+
+
+
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/Dummy-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00</x-m>
+                        <y-m>0.222907</y-m>
+                        <z-m>0.118754</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>0.222907</y-m>
+                        <z-m>0.118754</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/Dummy-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00</x-m>
+                        <y-m>0.132978</y-m>
+                        <z-m>0.118754</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>0.132978</y-m>
+                        <z-m>0.118754</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/Dummy-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00</x-m>
+                        <y-m>0.0443065</y-m>
+                        <z-m>0.118754</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>0.0443065</y-m>
+                        <z-m>0.118754</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+
+
+
+
+        <model>
+                <name>Dummyl</name>
+                <path>Aircraft/Noratlas/Instruments/Dummy-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00</x-m>
+                        <y-m>0.222907</y-m>
+                        <z-m>0.028374</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>0.222907</y-m>
+                        <z-m>0.028374</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/Dummy-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00</x-m>
+                        <y-m>0.132978</y-m>
+                        <z-m>0.028374</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>0.132978</y-m>
+                        <z-m>0.028374</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/Dummy-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00</x-m>
+                        <y-m>0.0443065</y-m>
+                        <z-m>0.028374</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>0.0443065</y-m>
+                        <z-m>0.028374</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+
+
+
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/Dummy-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00</x-m>
+                        <y-m>0.222907</y-m>
+                        <z-m>-0.0589909</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>0.222907</y-m>
+                        <z-m>-0.0589909</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/Dummy-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00</x-m>
+                        <y-m>0.132978</y-m>
+                        <z-m>-0.0589909</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>0.132978</y-m>
+                        <z-m>-0.0589909</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+
+        <model>
+                <name>Dummy</name>
+                <path>Aircraft/Noratlas/Instruments/Dummy-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00</x-m>
+                        <y-m>0.0443065</y-m>
+                        <z-m>-0.0589909</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+        <model>
+                <name>Bezel</name>
+                <path>Aircraft/Noratlas/Instruments/Bezel_pt-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00473418</x-m>
+                        <y-m>0.0443065</y-m>
+                        <z-m>-0.0589909</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+
+        <!--======================Bas Inter============================-->
+        <model>
+                <name>Ignition</name>
+                <path>Aircraft/Noratlas/Instruments/IGNITION-Nord.xml</path>
+                <offsets>
+                        <x-m>0.0109815</x-m>
+                        <y-m>-0.133492</y-m>
+                        <z-m>-0.130106</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+
+        <model>
+                <name>CutOff</name>
+                <path>Aircraft/Noratlas/Instruments/CUTOFF-Nord.xml</path>
+                <offsets>
+                        <x-m>0.00846931</x-m>
+                        <y-m>-0.043602</y-m>
+                        <z-m>-0.129266</z-m>
+                        <pitch-deg>0</pitch-deg>
+                </offsets>
+        </model>
+
+
+
+
+
+    </PropertyList>

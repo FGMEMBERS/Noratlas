@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+   <!--             Auteur :      Gerard ROBIN                       COPYRIGHT-->
+<PropertyList>
+
+    <path>noratlas-helice.ac</path>
+    <texture-path>Textures/texture-noratlas</texture-path>
+
+
+
+
+
+
+
+
+</PropertyList>

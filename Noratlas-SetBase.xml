@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<!--
+*****************************************************************
+Noratlas by Gérard  ROBIN
+
+************************************************************************
+-->
+
+<PropertyList>
+
+ <sim>
+
+    <systems>
+        <autopilot>
+                <path>Aircraft/Noratlas/Systems/autopilot.xml</path>
+        </autopilot>
+    </systems>
+
+    <sound>
+        <path>Aircraft/Noratlas/Sounds/sound.xml</path>
+    </sound>
+    <flaps><current-setting>0</current-setting></flaps>
+
+
+
+  <view>
+    <internal archive="y">true</internal>
+    <config>
+        <!-- x/y/z == right/up/back -->
+        <x-offset-m archive="y">-0.474958</x-offset-m>
+        <y-offset-m archive="y">0.90</y-offset-m>
+        <z-offset-m archive="y">-6.09852</z-offset-m>
+        <pitch-offset-deg archive="y">-16.0</pitch-offset-deg>
+        <default-field-of-view-deg type="double">72.0</default-field-of-view-deg>
+    </config>
+  </view>
+
+    <current-view>
+            <field-of-view type="double">72.0</field-of-view>
+    </current-view>
+
+
+  <chase-distance-m>-40</chase-distance-m>
+
+
+
+
+    <hud>
+        <enable3d>true</enable3d>
+    </hud>
+
+    
+    <multiplay>
+        <generic>
+                <float n="0" alias="/surface-positions/gear-pos-norm"/>
+                <float n="1" alias="/gear/gear[0]/steering-norm"/>
+                <float n="2" alias="/fdm/jsbsim/fcs/av-latg-porte-pos-norm"/>
+                <float n="3" alias="/engines/engine[0]/thruster/rpm"/>
+                <float n="4" alias="/engines/engine[1]/thruster/rpm"/>
+                <float n="5" alias="/fdm/jsbsim/fcs/propeller0-rotation"/>
+                <float n="6" alias="/fdm/jsbsim/fcs/propeller1-rotation"/>
+                <float n="7" alias="/surface-positions/cowl-flap-pos-norm"/>
+                <float n="8" alias="/fdm/jsbsim/fcs/landing-light"/>
+                <float n="9" alias="/fdm/jsbsim/fcs/ar-latd-porte-pos-norm"/>
+                <!--<float n="10" alias="/fdm/jsbsim/fcs/ar-d-porte-pos-norm"/>
+                <float n="11" alias="/fdm/jsbsim/fcs/ar-g-porte-pos-norm"/>
+                <float n="12" alias="/fdm/jsbsim/fcs/av-latg-porte-pos-norm"/>
+                <float n="13" alias="/fdm/jsbsim/fcs/rampe-pos-norm"/>-->
+                <string n="0"></string>
+        </generic>
+    </multiplay>
+
+
+ </sim>
+
+    <engines>
+        <engine n="0">
+                <rpm type="double">0</rpm>
+        </engine>
+        <engine n="1">
+                <rpm type="double">0</rpm>
+        </engine>
+        <engine n="2">
+                <running>false</running>
+        </engine>
+        <engine n="3">
+                <running>false</running>
+        </engine>
+    </engines>
+
+
+    <ai>
+        <submodels>
+            <trigger type="bool">false</trigger>
+        </submodels>
+    </ai>
+
+    <controls>
+    <gear>
+            <brake-parking type="double">1</brake-parking>
+        </gear>
+        <engines>
+            <engine n="0">
+                    <magnetos>0</magnetos>
+                    <throttle type="double">0</throttle>
+                    <master-bat>false</master-bat>
+            </engine>
+            <engine n="1">
+                    <magnetos>0</magnetos>
+                    <throttle type="double">0</throttle>
+                    <master-bat>false</master-bat>
+            </engine>
+            <engine n="2">
+                <fuel-pump>false</fuel-pump>
+                <master-bat>false</master-bat>
+            </engine>
+            <engine n="3">
+                <fuel-pump>false</fuel-pump>
+                 <master-bat>false</master-bat>
+            </engine>
+	    <engine n="4">
+                <throttle type="double">0</throttle>
+            </engine>
+        </engines>
+        <switches>
+            <landing-light>true</landing-light>
+            <master-avionics>false</master-avionics>
+        </switches>
+
+        <lighting>
+            <instruments-norm type="double">0.0</instruments-norm>
+        </lighting>
+
+        <electric>
+            <master-switch>false</master-switch>
+            <battery-switch>false</battery-switch>
+            <external-power>false</external-power>
+        </electric>
+    </controls>
+
+
+
+    <input include="Inputs/Nord-input.xml"/>
+
+
+     <fdm><jsbsim><fcs>
+        <lighting-instruments-norm>0</lighting-instruments-norm>
+    </fcs></jsbsim></fdm>
+
+    <nasal>
+                <crash>
+		  <file>Aircraft/Noratlas/Systems/crash.nas</file>
+	        </crash>
+                <electrical>
+                        <file>Aircraft/Noratlas/Systems/electrical.nas</file>
+                </electrical>
+		<terrain>
+			<file>Aircraft/Noratlas/Systems/terrain.nas</file>
+		</terrain>
+    </nasal>
+
+
+</PropertyList>

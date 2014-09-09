@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!--
+Usable with FlightGear
+Property of Gerard Robin
+Copyright License:  GPL
+-->
+<PropertyList>
+
+    <keyboard>
+        <key n="37">
+                <name>%</name>
+                <desc>Cutoff ON/OFF Turbo Engine</desc>
+                            <binding>
+                                <command>property-toggle</command>
+                                <property>/fdm/jsbsim/fcs/cutoff-switch</property>
+                            </binding>
+                            <binding>
+                                <command>property-toggle</command>
+                                <property>/controls/engines/engine[2]/cutoff</property>
+                            </binding>
+                            <binding>
+                                <command>property-toggle</command>
+                                <property>/controls/engines/engine[3]/cutoff</property>
+                            </binding>
+        </key>
+
+        <key n="100">
+                <name>d</name>
+                <desc>Toggle Porte</desc>
+                <binding>
+                        <command>property-toggle</command>
+                        <property>/fdm/jsbsim/fcs/ar-latg-porte-cmd-norm</property>
+                </binding>
+                <binding>
+                        <command>property-toggle</command>
+                        <property>/fdm/jsbsim/fcs/ar-latd-porte-cmd-norm</property>
+                </binding>
+        </key>
+
+        <key n="68">
+                <name>D</name>
+                <desc>Toggle Porte</desc>
+                <binding>
+                        <command>property-toggle</command>
+                        <property>/fdm/jsbsim/fcs/ar-porte-cmd-norm</property>
+                </binding>
+        </key>
+
+        <key n="10">
+                <name>Ctrl-j</name>
+                <desc>Jump-Signal</desc>
+                <binding>
+                        <command>property-toggle</command>
+                        <property>/controls/jump-signal</property>
+                </binding>
+        </key>
+
+
+
+    </keyboard>
+</PropertyList>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+
+<system name="">
+    
+    <property>fcs/cutoff-switch</property>
+    
+    <channel name="Turbine">
+        
+        <kinematic name="Cutoff Switch Delay">
+            <input>fcs/cutoff-switch</input>
+            <traverse>
+                <setting>
+                    <position>0.0000</position>
+                    <time>0.0000</time>
+                </setting>
+                <setting>
+                    <position>1.0000</position>
+                    <time>1.0000</time>
+                </setting>
+            </traverse>
+        </kinematic>
+        
+        <switch name="Fuel Pump2 Cmd">
+            <default value="0"/>
+            <test  logic="AND" value="1">
+                fcs/cutoff-switch == 1
+            </test>
+        </switch>
+        <pure_gain name="Fuel Pump2">
+            <input>fcs/fuel-pump2-cmd</input>
+            <gain>1</gain>
+            <output>/controls/engines/engine[2]/fuel-pump</output>
+        </pure_gain>
+        
+        <switch name="Fuel Pump3 Cmd">
+            <default value="0"/>
+            <test  logic="AND" value="1">
+                fcs/cutoff-switch == 1
+            </test>
+        </switch>
+        <pure_gain name="Fuel Pump3">
+            <input>fcs/fuel-pump3-cmd</input>
+            <gain>1</gain>
+            <output>/controls/engines/engine[3]/fuel-pump</output>
+        </pure_gain>
+        
+        <switch name="Cutoff Cmd">
+            <default value="1"/>
+            <test  logic="AND" value="0">
+                fcs/cutoff-switch-delay == 1
+                fcs/fuel-pump2-cmd == 1
+                fcs/fuel-pump3-cmd == 1
+            </test>
+            <output>propulsion/cutoff_cmd</output>
+        </switch>
+       
+        
+        
+        
+    </channel>
+
+</system>

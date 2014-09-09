@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+
+<system name="">
+    
+    <channel name="Fuel">
+        <summer name="Tank Capacity">
+            <input>/consumables/fuel/tank[0]level-gal_us</input>
+            <input>/consumables/fuel/tank[1]level-gal_us</input>
+            <clipto>
+                <min>0</min>
+                <max>1820</max>
+            </clipto>
+            <output>/consumables/fuel/total-fuel-gals</output>
+        </summer>
+    </channel>
+
+</system>

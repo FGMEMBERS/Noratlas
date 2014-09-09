@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+<!--                   Auteur :      Gerard ROBIN                       COPYRIGHT-->
+<PropertyList>
+
+    <path>Models/nord-2502-tabl_bord3D.ac</path>
+    <texture-path>Models/Textures</texture-path>
+    <model>
+            <name>GTableau</name>
+            <path>Aircraft/Noratlas/Panels/Nord-2502_GTableau.xml</path>
+            <offsets>
+                    <x-m>0.00708642</x-m>
+                    <y-m>-0.487659</y-m>
+                    <z-m>-0.0309505</z-m>
+                    <roll-deg></roll-deg>
+            </offsets>
+    </model>
+
+    <model>
+            <name>DTableau</name>
+            <path>Aircraft/Noratlas/Panels/Nord-2502_DTableau.xml</path>
+            <offsets>
+                    <x-m>0.00708642</x-m>
+                    <y-m>0.487659</y-m>
+                    <z-m>-0.0309505</z-m>
+                    <roll-deg></roll-deg>
+            </offsets>
+    </model>
+
+    <model>
+            <name>CTableau</name>
+            <path>Aircraft/Noratlas/Panels/Nord-2502_CTableau.xml</path>
+            <offsets>
+                    <x-m>0.00244852</x-m>
+                    <y-m>0</y-m>
+                    <z-m>-0</z-m>
+                    <roll-deg></roll-deg>
+            </offsets>
+    </model>
+
+
+</PropertyList>

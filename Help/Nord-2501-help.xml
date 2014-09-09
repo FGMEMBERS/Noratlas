@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+    Usable with FlightGear
+    Property of Gerard Robin
+    Copyright License:  GPL
+-->
+<PropertyList>
+
+        <title>Nord-2501</title>
+        <key>
+                <name>d</name>
+                <desc>Toggle rear side doors open/close</desc>
+        </key>
+        <key>
+                <name>shift D</name>
+                <desc>Toggle rear door  open/close</desc>
+        </key>
+        <key>
+                <name>ctrl j</name>
+                <desc>Go Parachuter</desc>
+        </key>
+        <key>
+                <name>Space or s (depends on your fg update)</name>
+                <desc>Start the Engine</desc>
+        </key>
+
+        <line>========Start and Stop Routine=========</line>
+        <line>To start the engines</line>
+        <line>increase magneto switch  and electric master switch "on" ( key  name "}")</line>
+        <line>start engines ( key   "space" )</line>
+        <line>then take off</line>
+        <line></line>
+        <line>To take off</line>
+        <line>Set Flaps to position 2 (depress twice key  "]", right bracket ) </line>
+        <line>Unlock Brake parking  (shift B) </line>
+        <line>Push the throttle to maximum</line>
+        <line>When speed 70 knots pull the stick</line>
+        <line>the aircraft will take off</line>
+        <line></line>
+        <line>To stop the engines</line>
+        <line>decrease magneto switch  and electric master switch "off" ( key  name "{")</line>
+        <line></line>
+        <line></line>
+        <line></line>
+
+</PropertyList>
