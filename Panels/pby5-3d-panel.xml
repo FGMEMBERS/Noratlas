@@ -43,7 +43,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
  <instruments>
 <!--====================Pilote================-->
-  <instrument include="../../Instruments/dme.xml">
+  <instrument include="Aircraft/Instruments/dme.xml">
    <name>DME Display</name>
    <x>935</x>
    <y>340</y>
@@ -51,7 +51,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>50</h>
   </instrument>
 
- <instrument include="../../Instruments/clock.xml">
+ <instrument include="Aircraft/Instruments/clock.xml">
    <name>Chronometer</name>
    <x>270</x>
    <y>285</y>
@@ -61,7 +61,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 
 
-  <instrument include="../../Instruments/asi-c310.xml">
+  <instrument include="Aircraft/Instruments/asi-c310.xml">
    <name>Airspeed Indicator</name>
    <x>475</x>
    <y>402</y>
@@ -69,7 +69,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>110</h>
   </instrument>
 
-  <instrument include="../../Instruments/turn.xml">
+  <instrument include="Aircraft/Instruments/turn.xml">
    <name>Turn Coordinator</name>
    <x>475</x>
    <y>285</y>
@@ -77,7 +77,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>110</h>
   </instrument>
 
-  <instrument include="../../Instruments/attitude-indicator.xml">
+  <instrument include="Aircraft/Instruments/attitude-indicator.xml">
    <name>Attitude Indicator</name>
    <x>590</x>
    <y>402</y>
@@ -85,7 +85,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>110</h>
   </instrument>
 
-  <instrument include="../../Instruments/altimeter.xml">
+  <instrument include="Aircraft/Instruments/altimeter.xml">
    <name>Altimeter</name>
    <x>705</x>
    <y>402</y>
@@ -94,7 +94,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   </instrument>
 
 
-  <instrument include="../../Instruments/hsi.xml">
+  <instrument include="Aircraft/Instruments/hsi.xml">
    <name>Horizontal Situation Indicator</name>
    <x>590</x>
    <y>285</y>
@@ -102,7 +102,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>110</h>
   </instrument>
 
-  <instrument include="../../Instruments/vertical.xml">
+  <instrument include="Aircraft/Instruments/vertical.xml">
    <name>Vertical Velocity Indicator</name>
    <x>705</x>
    <y>285</y>
@@ -113,7 +113,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!--======================CoPilote=================-->
 
-  <instrument include="../../Instruments/asi-c310.xml">
+  <instrument include="Aircraft/Instruments/asi-c310.xml">
    <name>Airspeed Indicator</name>
    <x>1089</x>
    <y>402</y>
@@ -121,7 +121,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>110</h>
   </instrument>
 
-  <instrument include="../../Instruments/turn.xml">
+  <instrument include="Aircraft/Instruments/turn.xml">
    <name>Turn Coordinator</name>
    <x>1089</x>
    <y>285</y>
@@ -129,7 +129,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>110</h>
   </instrument>
 
-  <instrument include="../../Instruments/attitude-indicator.xml">
+  <instrument include="Aircraft/Instruments/attitude-indicator.xml">
    <name>Attitude Indicator</name>
    <x>1204</x>
    <y>402</y>
@@ -137,7 +137,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>110</h>
   </instrument>
 
-  <instrument include="../../Instruments/altimeter.xml">
+  <instrument include="Aircraft/Instruments/altimeter.xml">
    <name>Altimeter</name>
    <x>1319</x>
    <y>402</y>
@@ -146,7 +146,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   </instrument>
 
 
-  <instrument include="../../Instruments/hsi.xml">
+  <instrument include="Aircraft/Instruments/hsi.xml">
    <name>Horizontal Situation Indicator</name>
    <x>1204</x>
    <y>285</y>
@@ -154,7 +154,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>110</h>
   </instrument>
 
-  <instrument include="../../Instruments/vertical.xml">
+  <instrument include="Aircraft/Instruments/vertical.xml">
    <name>Vertical Velocity Indicator</name>
    <x>1319</x>
    <y>285</y>
@@ -163,7 +163,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   </instrument>
 
 
-  <instrument include="../../Instruments/dual-manifold-pressure.xml">
+  <instrument include="Aircraft/Instruments/dual-manifold-pressure.xml">
    <name>Manifold Pressure Gauge</name>
    <x>590</x>
    <y>160</y>
@@ -173,7 +173,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <!--==========================================-->
 
-  <instrument include="../../Instruments/tach-2700-redline.xml">
+  <instrument include="Aircraft/Instruments/tach-2700-redline.xml">
    <name>RPM Gauge</name>
    <x>705</x>
    <y>160</y>
@@ -181,7 +181,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>100</h>
   </instrument>
 
-  <instrument include="../../Instruments/egt-dual.xml">
+  <instrument include="Aircraft/Instruments/egt-dual.xml">
    <name>Dual EGT Gauge</name>
    <x>370</x>
    <y>130</y>
@@ -189,7 +189,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>100</h>
   </instrument>
 
-  <!--<instrument include="../../Instruments/fuel.xml">
+  <!--<instrument include="Aircraft/Instruments/fuel.xml">
    <name>Fuel Gauge</name>
    <x>270</x>
    <y>130</y>
@@ -203,7 +203,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 
 
-  <instrument include="../../Instruments/tach-2700-redline.xml">
+  <instrument include="Aircraft/Instruments/tach-2700-redline.xml">
    <name>RPM Gauge</name>
    <x>1109</x>
    <y>160</y>
@@ -211,7 +211,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>100</h>
   </instrument>
 
-  <instrument include="../../Instruments/egt-dual.xml">
+  <instrument include="Aircraft/Instruments/egt-dual.xml">
    <name>Dual EGT Gauge</name>
    <x>1424</x>
    <y>250</y>
@@ -219,7 +219,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>100</h>
   </instrument>
 
-  <!--<instrument include="../../Instruments/fuel.xml">
+  <!--<instrument include="Aircraft/Instruments/fuel.xml">
    <name>Fuel Gauge</name>
    <x>1524</x>
    <y>250</y>
@@ -233,7 +233,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!--=================================-->
 
-  <instrument include="../../Instruments/gear-indicator.xml">
+  <instrument include="Aircraft/Instruments/gear-indicator.xml">
    <name>Gear Indicator Light</name>
    <x>475</x>
    <y>209</y>
@@ -241,7 +241,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>17</h>
   </instrument>
 
-  <instrument include="../../Instruments/brakes.xml">
+  <instrument include="Aircraft/Instruments/brakes.xml">
    <name>Brake Indicator Light</name>
    <x>475</x>
    <y>190</y>
@@ -249,7 +249,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>17</h>
   </instrument>
 
-  <instrument include="../../Instruments/controls.xml">
+  <instrument include="Aircraft/Instruments/controls.xml">
    <name>Control Position Indicators</name>
    <x>475</x>
    <y>130</y>
@@ -259,7 +259,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 
 
-  <instrument include="../../Instruments/gear-indicator.xml">
+  <instrument include="Aircraft/Instruments/gear-indicator.xml">
    <name>Gear Indicator Light</name>
    <x>1319</x>
    <y>209</y>
@@ -267,7 +267,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>17</h>
   </instrument>
 
-  <instrument include="../../Instruments/brakes.xml">
+  <instrument include="Aircraft/Instruments/brakes.xml">
    <name>Brake Indicator Light</name>
    <x>1319</x>
    <y>190</y>
@@ -275,7 +275,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>17</h>
   </instrument>
 
-  <instrument include="../../Instruments/controls.xml">
+  <instrument include="Aircraft/Instruments/controls.xml">
    <name>Control Position Indicators</name>
    <x>1319</x>
    <y>130</y>
@@ -290,7 +290,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 
 
-  <instrument include="../../Instruments/nav1.xml">
+  <instrument include="Aircraft/Instruments/nav1.xml">
    <name>VOR 2 Gauge</name>
    <params>
     <nav-to-flag>/instrumentation/nav[1]/to-flag</nav-to-flag> -->
@@ -309,7 +309,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 
 
-  <instrument include="../../Instruments/gyro.xml">
+  <instrument include="Aircraft/Instruments/gyro.xml">
    <name>Directional Gauge</name>
    <x>365</x>
    <y>250</y>
@@ -318,7 +318,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   </instrument>
 
 
-  <instrument include="../../Instruments/gyro.xml">
+  <instrument include="Aircraft/Instruments/gyro.xml">
    <name>Directional Gauge</name>
    <x>1429</x>
    <y>365</y>
@@ -329,7 +329,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 
 
-  <instrument include="../../Instruments/markerbeacon.xml">
+  <instrument include="Aircraft/Instruments/markerbeacon.xml">
    <name>Marker Beacon Indicators</name>
    <x>812</x>
    <y>339</y>
@@ -338,13 +338,13 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   </instrument>
 
 
-  <instrument include="../../Instruments/navcom-kx155.xml">
+  <instrument include="Aircraft/Instruments/navcom-kx155.xml">
    <name>NavCom 1 Radio</name>
    <x>896</x>
    <y>272</y>
   </instrument>
 
-  <instrument include="../../Instruments/navcom-kx155.xml">
+  <instrument include="Aircraft/Instruments/navcom-kx155.xml">
    <name>NavCom 2 Radio</name>
    <params>
     <comm-freq-selected-prop>/instrumentation/comm[1]/frequencies/selected-mhz</comm-freq-selected-prop>
@@ -358,13 +358,13 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <y>184</y>
   </instrument>
 
-  <instrument include="../../Instruments/adf-radio.xml">
+  <instrument include="Aircraft/Instruments/adf-radio.xml">
    <name>ADF Radio</name>
    <x>896</x>
    <y>107</y>
   </instrument>
 
-  <instrument include="../../Instruments/autopilot.xml">
+  <instrument include="Aircraft/Instruments/autopilot.xml">
    <name>Autopilot</name>
    <x>896</x>
    <y>157v</y>
@@ -372,7 +372,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- end radio stack -->
 
-  <!--<instrument include="../../Instruments/twin-magneto-switch.xml">
+  <!--<instrument include="Aircraft/Instruments/twin-magneto-switch.xml">
    <name>Magneto switch panel</name>
    <x>715</x>
    <y>35</y>
@@ -380,7 +380,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>50</h>
   </instrument>-->
 
-  <!--<instrument include="../../Instruments/throttle-quadrant.xml">
+  <!--<instrument include="Aircraft/Instruments/throttle-quadrant.xml">
   <name>Throttle quadrant</name>
   <x>885</x>
   <y>40</y>
@@ -388,7 +388,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 
 
- <!-- <instrument include="../../Instruments/magcompass.xml">
+ <!-- <instrument include="Aircraft/Instruments/magcompass.xml">
    <name>Magnetic Compass</name>
    <x>898</x>
    <y>595</y>
