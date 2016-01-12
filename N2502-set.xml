@@ -15,6 +15,8 @@ Gérard  ROBIN
     <status>alpha, "GPL Copyright"</status>
     <version>0.21 7-0406</version>
 
+    <variant-of>N2501</variant-of>
+    
     <flight-model>jsb</flight-model>
     <aero>n2502</aero>
     <startup>
