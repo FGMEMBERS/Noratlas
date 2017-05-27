@@ -96,6 +96,7 @@ Noratlas by Gérard  ROBIN
     </ai>
 
     <controls>
+    <jump-signal type="int">0</jump-signal>
     <gear>
             <brake-parking type="double">1</brake-parking>
         </gear>

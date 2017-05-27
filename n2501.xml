@@ -361,9 +361,9 @@ Performance
                       <independentVar lookup="row" >aero/qbar-psf</independentVar>
                       <independentVar lookup="column">propulsion/engine/thrust-coefficient</independentVar>
                       <tableData>
-                                          0.040  0.000
-                          00.0000	  1.410  1.000
-                          50.0000	  1.000  1.000
+                                     	0.000 0.040
+                          00.0000	1.000 1.410
+                          50.0000	1.000 1.000
                       </tableData>
                   </table>
             </product>
